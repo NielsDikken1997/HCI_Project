@@ -16,13 +16,17 @@
   <title>HobbyLink</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="./img/Favicon.png">
+  <link rel="icon" href="/img/Favicon.png">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/timepicker@1.11.15/jquery.timepicker.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/style.css">
 
   <script src="/js/jquery-3.4.1.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/timepicker@1.11.15/jquery.timepicker.min.js"></script>
   <script src="/js/script.js"></script>
 
   <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
@@ -80,7 +84,8 @@
           <ul class="nav nav-list">
             <li class="active"><a href="#all"><i class="fas fa-users"></i> List of members</a></li>
             <li><a href="#all"><i class="fas fa-calendar-alt"></i> Events</a></li>
-            <li><a data-target="#myModal" data-toggle="modal" href="#myModal"><i class="fas fa-calendar-plus"></i>Create
+            <li><a data-target="#myModal" data-toggle="modal" href="#myModal"><i class="fas fa-calendar-plus"></i>
+                Create
                 Event</a></li>
             <li><a href="#all"><i class="fas fa-hashtag"></i> Media</a></li>
             <li class="divider"></li>
@@ -108,27 +113,27 @@
 
   <!-- The Modal -->
   <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <!-- Modal content -->
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-              aria-hidden="true">&times;</span></button>
-          <h2>Modal Header</h2>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the Modal Body</p>
-          <p>Some other text...</p>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Publish</button>
-        </div>
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+            aria-hidden="true">&times;</span></button>
+        <h2>Modal Header</h2>
+      </div>
+      <div class="modal-body">
+        <h3>Location</h3>
+        <h3>Date / Time</h3>
+        <p id="alternateUiWidgetsExample">
+          <input placeholder="15/05/2019" type="text" id="datepicker">
+          <input placeholder="00:00" id="basicExample" type="text" class="time ui-timepicker-input" autocomplete="off">
+        </p>
+        <h3>Duration</h3>
+        <h3>Level</h3>
+        <h3>Participants</h3>
+        <h3>Price</h3>
+        <h3>Notification</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Publish</button>
       </div>
     </div>
   </div>
