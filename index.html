@@ -1,3 +1,4 @@
+<!-- 
 # EIT Digital Master Degree, HCI
 # Authors:
 #     Aceituno Ferro, Pablo
@@ -5,60 +6,101 @@
 #     Hou, Peizhe
 #     Manzano, Izquierdo, Paula
 
-# test
+# Main Page
+-->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>HobbyLink</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="./img/Favicon.png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="/js/script.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 
 <header>
-   <div class="container-fluid">	
-   <div class="row">
-          
-     <!-- Title-->
-        <div class="col-md-10 text-center">
-          <h2> <a href="#all"> HobbyLink </a></h2>
-        </div>
+  <div class="container-fluid">	
 
-     <!-- UserLogged -->
-        <div class="col-md-2 text-right">
-            Welcome, <a class="btn btn-small btn-primary" href="#!all">Alex</a>
-		</div>
+     <nav class="navbar fixed-top navbar-light bg-light align-items-center">
+       <div class="row">
+         <div class="col-md-2">
+             <a class="navbar-brand" href="#"> <i class="fas fa-link"></i> HobbyLink</a>
 
-   </div>
-   </div>
+         </div>
+          <div class="col-md-8">
+            <div class="row">
+             <div class="col-md-11">
+                 <div class="form-group">
+                     <input type="search" class="form-control" id="exampleFormControlInput1" placeholder="Global Search">
+                 </div>
+             </div> 
+             <div class="col-md-1 float-right">
+                 <i class="far fa-bell fa-2x light-grey"></i>
+             </div>  
+            </div>
+             
+          </div> 
+           
+       </div>
+         
+     </nav>
+         
+  </div>
 </header>
 
 <body>
 <div class="container-fluid">
-  <div class="row">
-  	<!-- Left Side -->
-    <div class="col-md-2">
-      <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="#all">Home</a></li>
-        <li><a href="#all">Hobbies</a></li>
-    	<li><a href="#all">Events</a></li>
-    	<li><a href="#all">My Groups</a></li>
-    	<li><a href="#all">Notifications</a></li>
-    	<li><a href="#all">Messenger</a></li>
-      </ul>
-    </div>
-    
-    <!-- Container -->
-    <div class="col-md-10">
-      <img src="https://www.aberdeen.com/wp-content/uploads/2016/10/shipping-container-b.jpg",
-      	   alt="here is the container",
-      	   style="width:700px;height:400px;">
-    </div>
-    <div class="clearfix visible-lg"></div>
-  </div>
+ <div class="row">
+   <!-- Left Side -->
+   <div class="col-md-2" >
+
+     <div class="row align-items-center" id="left-navbar">
+         <div class="col-md-3">
+             <img src="img/profile.png" alt="myprofile"style="width:50px;height:50px;">
+         </div>
+         <div class="col-md-9">
+           <h4>Sierra Ferguson</h4>
+           <p>sierraferguson@gmail.com</p>
+         </div>
+     </div>
+     
+     
+   <div class="navbar">
+       <ul class="nav nav-list">
+           <li class="active"><a href="#all"><i class="fas fa-th-large"></i> Dashboard</a></li>
+           <li><a href="#all"><i class="fas fa-search"></i> Explore Hobbies</a></li>
+           <li><a href="#all"><i class="fas fa-calendar-alt"></i> Events</a></li>
+           <li><a href="#all"><i class="fas fa-users"></i> My Groups</a></li>
+           <li><a href="#all"><i class="far fa-comment-alt border-bottom"></i> Messenger</a></li>
+           <li class="divider"></li>
+           <li><a href="#all"><i class="fas fa-ellipsis-h"></i> Settings</a></li>
+         </ul>
+   </div>
+     
+   </div>
+   
+   <!-- Container -->
+   <div class="col-md-8" id="main-content">
+     <!--img src="https://www.aberdeen.com/wp-content/uploads/2016/10/shipping-container-b.jpg",
+          alt="here is the container",
+          style="width:700px;height:400px;"-->
+          <p>lorem ipsum</p>
+          
+   </div>
+   <div class="col-md-2">
+
+   </div>
+ </div>
 </div>
 </body>
 
@@ -67,25 +109,5 @@
 <p>EIT Digital Master Degree, HCI Project.</p>
 </footer>
 <!-- Footer -->
-    
+   
 </html>
-
-
-
-
-
-
-
-
-<style>
-.bg-4 { 
-  background-color: #000033;
-  color: #ffffff;
-}
-
-.container-fluid {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-</style>
