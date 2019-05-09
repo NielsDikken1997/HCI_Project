@@ -43,13 +43,24 @@ a{
 
 #main-content{
     outline: 10px solid #e6e6e6;
+    margin: 20px;
+    padding: 20px;
+}
+
+#imgPadelCards {
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
+  width:236px;
+  height:100px;
+}
+
+#c {
+  text-align:center;
 }
 
 navbar-brand{
   font-size: large;
 }
-
-  body {font-family: Arial, Helvetica, sans-serif;}
 
 /* The Modal (background) */
 .modal {
@@ -121,4 +132,8 @@ navbar-brand{
   padding: 2px 16px;
   background-color: #000033;;
   color: white;
+}
+
+body.modal-open div.modal-backdrop { 
+  z-index: 0; 
 }
