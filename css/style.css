@@ -64,9 +64,19 @@ subtitle_cat{
   float:left;
 }
 
-.form-check-label{
-  text-align: left;
+.form-check-input{
+  width: 10%;
 }
+
+.btn-task1{
+  align-content: center;
+}
+
+span{
+  align-self: right;
+}
+
+
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -245,6 +255,9 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
   width: auto;
+}
+#maps{
+  text-align: center;
 }
 
 .col-25 {
