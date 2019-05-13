@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HobbyLink</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="./img/Favicon.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+
+</head>
+
+<header>
+   <div class="container-fluid">	
+
+      <nav class="navbar fixed-top navbar-light bg-light align-items-center">
+        <div class="row">
+          <div class="col-md-2">
+              <a class="navbar-brand" href="#"> <i class="fas fa-link"></i> HobbyLink</a>
+
+          </div>
+           <div class="col-md-8">
+             <div class="row">
+              <div class="col-md-11">
+                  <div class="form-group">
+                      <input type="search" class="form-control" id="exampleFormControlInput1" placeholder="Global Search">
+                  </div>
+              </div> 
+              <div class="col-md-1 float-right">
+                  <i class="far fa-bell fa-2x light-grey"></i>
+              </div>  
+             </div>
+              
+           </div> 
+            
+        </div>
+          
+      </nav>
+          
+   </div>
+</header>
+
+<body>
+<div class="container-fluid">
+  <div class="row">
+  	<!-- Left Side -->
+    <div class="col-md-2" >
+
+      <div class="row align-items-center" id="left-navbar">
+          <div class="col-md-3">
+              <img src="img/profile.png" alt="myprofile"style="width:50px;height:50px;">
+          </div>
+          <div class="col-md-9">
+            <h4>Sierra Ferguson</h4>
+            <p>sierraferguson@gmail.com</p>
+          </div>
+      </div>
+      
+      
+    <div class="navbar">
+        <ul class="nav nav-list">
+            <li class="active"><a href="#all"><i class="fas fa-th-large"></i> Dashboard</a></li>
+            <li><a href="#all"><i class="fas fa-search"></i> Explore Hobbies</a></li>
+            <li><a href="#all"><i class="fas fa-calendar-alt"></i> Events</a></li>
+            <li><a href="#all"><i class="fas fa-users"></i> My Groups</a></li>
+            <li><a href="#all"><i class="far fa-comment-alt border-bottom"></i> Messenger</a></li>
+            <li class="divider"></li>
+            <li><a href="#all"><i class="fas fa-ellipsis-h"></i> Settings</a></li>
+          </ul>
+    </div>
+      
+    </div>
+    
+    <!-- Container -->
+    <div class="col-md-8" id="main-content">
+
+        <div class="col-md-12" id="c">
+          <h4> Results obtained: </h4>
+        </div>
+
+          <!--
+          <div class="col-md-12" id="c">
+            <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">No Filter Selected
+                  <span class="caret"></span></button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">No Filter Selected</a></li>
+                  </ul>
+            </div>
+          </div>
+         </div>-->
+
+          <div class="col-md-4" id="c">
+            <div class="panel panel-default">
+              <div class="panel-thumbnail"><img id="imgPadelCards" src="img/padelGroup1.png" alt="Moncloa Padel Club"> 
+              </div>
+              <div class="panel-body">
+                   <p class="lead">Moncloa Padel Club</p>
+                   <p> 2 Members, 0 Events, 1.0 km</p>
+                   <a href="#" class="btn btn-primary">see more</a>
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="col-md-4" id="c">
+          <div class="panel panel-default">
+            <div class="panel-thumbnail"><img id="imgPadelCards" src="img/padelGroup2.jpeg" alt="Aluche Group Padel">
+            </div>
+            <div class="panel-body">
+                  <p class="lead">Aluche Group Padel</p>
+                  <p> 17 Members, 25 Events, 1.2 km</p>
+                  <a href="#" class="btn btn-primary">see more</a>
+            </div>
+           </div>
+          </div>
+
+          <div class="col-md-4" id="c">
+          <div class="panel panel-default">
+            <div class="panel-thumbnail"><img id="imgPadelCards" src="img/padelGroup3.jpg" alt="Madrid Center Padel">
+            </div>
+            <div class="panel-body">
+                  <p class="lead">Madrid Center Padel</p>
+                  <p> 1 Member, 0 Events, 3.3 km</p>
+                  <a href="#" class="btn btn-primary">see more</a>
+            </div>
+           </div>
+          </div>
+
+
+          <div class="col-md-4" id="c">
+            <div class="panel panel-default">
+              <div class="panel-thumbnail"><img  id="imgPadelCards" src="img/padelGroup4.png" alt="Leganes Padel Club"> 
+              </div>
+              <div class="panel-body">
+                   <p class="lead">Leganes Padel Club</p>
+                   <p> 3 Members, 1 Events, 4.2 km</p>
+                   <a href="#" class="btn btn-primary">see more</a>
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="col-md-4" id="c">
+          <div class="panel panel-default">
+            <div class="panel-thumbnail"><img id="imgPadelCards" src="img/padelGroup5.png" alt="Carabanchel Padel">
+            </div>
+            <div class="panel-body">
+                  <p class="lead">Carabanchel Padel</p>
+                  <p> 0 Members, 0 Events, 5.2 km</p>
+                  <a href="#" class="btn btn-primary">see more</a>
+            </div>
+           </div>
+          </div>
+
+          <div class="col-md-4" id="c">
+          <div class="panel panel-default">
+            <div class="panel-thumbnail"><img id="imgPadelCards" src="img/padelGroup6.jpg" alt="Eagles Padel">
+            </div>
+            <div class="panel-body">
+                  <p class="lead">Eagles Padel</p>
+                  <p> 11 Members, 0 Events, 6.3 km</p>
+                  <a href="#" class="btn btn-primary">see more</a>
+            </div>
+           </div>
+          </div>
+
+          <div class="col-md-4" id="c">
+            <div class="panel panel-default">
+              <div class="panel-thumbnail"><img id="imgPadelCards" src="img/padelGroup7.jpg" alt="Serna Padel Club"> 
+              </div>
+              <div class="panel-body">
+                   <p class="lead">Serna Padel Club</p>
+                   <p> 5 Members, 1 Events, 7.2 km</p>
+                   <a href="#" class="btn btn-primary">see more</a>
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="col-md-4" id="c">
+          <div class="panel panel-default">
+            <div class="panel-thumbnail"><img id="imgPadelCards" src="img/padelGroup8.jpg" alt="Mostoles Padel">
+            </div>
+            <div class="panel-body">
+                  <p class="lead">Mostoles Padel</p>
+                  <p> 2 Members, 0 Events, 9.0 km</p>
+                  <a href="#" class="btn btn-primary">see more</a>
+            </div>
+           </div>
+          </div>
+
+          <div class="col-md-4" id="c">
+          <div class="panel panel-default">
+            <div class="panel-thumbnail"><img id="imgPadelCards" src="img/padelGroup9.png" alt="Padel Fuenlabrada">
+            </div>
+            <div class="panel-body">
+                  <p class="lead">Padel Fuenlabrada</p>
+                  <p> 1 Members, 0 Events, 13.3 km</p>
+                  <a href="#" class="btn btn-primary">see more</a>
+            </div>
+           </div>
+          </div>
+
+
+
+    </div>
+
+    <div class="col-md-2">
+
+    </div>
+  </div>
+</div>
+</body>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+<p>EIT Digital Master Degree, HCI Project.</p>
+</footer>
+<!-- Footer -->
+
+<script src="hobby/hobby-controllers.js"></script>
+    
+</html>
