@@ -43,16 +43,6 @@ a{
     padding: 20px;
 }
 
-#imgPadelCards {
-  border-top-left-radius: 3%;
-  border-top-right-radius: 3%;
-  width:236px;
-  height:100px;
-}
-
-#c {
-  text-align:center;
-}
 
 navbar-brand{
   font-size: large;
@@ -107,6 +97,21 @@ subtitle_cat{
   animation-duration: 0.4s
 }
 
+/* Modal Content */
+.modal-content-P {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
 .modal-dialog{
   overflow-y: initial !important
 }
@@ -124,7 +129,7 @@ subtitle_cat{
 
 /* The Close Button */
 .close {
-  color: rgb(190, 186, 186);
+  color: rgb(233, 233, 233);
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -141,19 +146,25 @@ subtitle_cat{
 
 .modal-header {
   padding: 0px 10px;
-  background-color: #000033;;
+  background-color: grey;
   color: white;
 }
 
 .modal-body {
   padding: 0px 10px;
-  height: 450px;
+  height: 505px;
+  overflow-y: auto;
+}
+
+.modal-body-P {
+  padding: 0px 10px;
+  height: 150px;
   overflow-y: auto;
 }
 
 .modal-footer {
   /* padding: 2px 16px; */
-  background-color: #000033;;
+  background-color: grey;
   color: white;
 }
 
@@ -167,6 +178,14 @@ body.modal-open div.modal-backdrop {
 
 input[type=text], select {
   width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+select.selectParticipants{
+  width: 37%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -199,14 +218,14 @@ input {
   resize: vertical;
 }
 
-label {
+label#labelModal {
   padding: 12px 12px 12px 10px;
   display: inline-block;
   font-size: 18px;
 }
 
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: #000033;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -214,10 +233,11 @@ input[type=submit] {
   cursor: pointer;
   float: right;
   width: 25%;
+  font-size: 15px;
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #000007;
 }
 
 .container {
@@ -245,9 +265,108 @@ input[type=submit]:hover {
   clear: both;
 }
 
+
+#imgPadelCards {
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
+  /*width:236px;*/
+  width:contain;
+  height:100px;
+}
+
+  #imgModal {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:80px;
+  height:80px;
+}
+
+#c {
+  text-align:center;
+}
+
 @media screen and (max-width: 600px) {
   .col-25, .col-75, input[type=submit] {
     width: 100%;
     margin-top: 0;
   }
+}
+
+/* chekcbox */
+/* The container */
+.checkboxContainer {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkboxContainer input#trigger {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: rgb(255, 255, 255);
+  border: solid rgb(100, 100, 100);
+}
+
+/* On mouse-over, add a grey background color */
+.checkboxContainer:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkboxContainer input:checked ~ .checkmark {
+  background-color: rgb(255, 255, 255);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkboxContainer input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkboxContainer .checkmark:after {
+  left: 6px;
+  top: 1px;
+  width: 8px;
+  height: 14px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+input#hidden_field {
+  width: 45%;
+  height: 20px;
+}
+
+#hidden_fields{
+  font-size: 15px;
 }
