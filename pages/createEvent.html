@@ -16,6 +16,11 @@
   <title>HobbyLink</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
   <link rel="icon" href="/img/Favicon.png">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/timepicker@1.11.15/jquery.timepicker.css">
@@ -118,93 +123,122 @@
       </div>
       <div class="container">
         <div class="modal-body">
-        <form action="/index.html">
-          <div class="row">
-            <div class="col-25">
-              <label>Location</label>
+          <form action="/index.html">
+            <div class="row">
+              <label for="autocomplete">Select: </label>
+              <input id="autocomplete">
+              <!-- <div class="col-25">
+                <label>Location</label>
+              </div>
+              <div class="col-75">
+                <input type="text" placeholder="Search">
+              </div> -->
             </div>
-            <div class="col-75">
-              <input type="text" placeholder="Search">
+            <div class="row">
+              <div class="col-25" id="alternateUiWidgetsExample">
+                <label>Date / Time</label>
+              </div>
+              <div class="col-75">
+                <input placeholder="15/05/2019" id="datepicker">
+                <input placeholder="00:00" id="selectTime" class="time ui-timepicker-input" autocomplete="off">
+                <!-- <span id="onselectTarget" style="margin-left: 30px;"></span> -->
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-25" id="alternateUiWidgetsExample">
-              <label>Date / Time</label>
+            <div class="row">
+              <div class="col-25">
+                <label>Duration</label>
+              </div>
+              <div class="col-75">
+                <input class="durationExample" type="text" class="time ui-timepicker-input" autocomplete="off">
+              </div>
             </div>
-            <div class="col-75">
-              <input placeholder="15/05/2019" id="datepicker">
-              <input placeholder="00:00" id="selectTime" class="time ui-timepicker-input" autocomplete="off">
-              <!-- <span id="onselectTarget" style="margin-left: 30px;"></span> -->
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label>Duration</label>
-            </div>
-            <div class="col-75">
-              <input class="durationExample" type="text" class="time ui-timepicker-input" autocomplete="off">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label>Level</label>
-            </div>
-            <div class="col-75">
-              <select id="mySelect" name="level">
-                <option value="Beginner">Beginner</option>
-                <option value="Amateur">Amateur</option>
-                <option value="Professional">Professional</option>
-                <option value="Elite">Elite</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label>Participants</label>
-            </div>
-            <div class="col-75">
-              <input type="text">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label>Price</label>
-            </div>
-            <div class="col-75">
-              <input type="text">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label>Public/Private event</label>
-            </div>
-            <div class="col-75">
-                <select id="selectOption" name="level">
-                  <option value="Public">Public</option>
-                  <option value="Private">Private</option>
+            <div class="row">
+              <div class="col-25">
+                <label>Level</label>
+              </div>
+              <div class="col-75">
+                <select id="mySelect" name="level">
+                  <option value="Beginner">Beginner</option>
+                  <option value="Amateur">Amateur</option>
+                  <option value="Professional">Professional</option>
+                  <option value="Elite">Elite</option>
                 </select>
               </div>
-          </div>
-          <div class="row">
+            </div>
+            <div class="row">
               <div class="col-25">
-                <label>Notification</label>
+                <label>Participants</label>
+              </div>
+              <div class="col-75">
+                <strong>min</strong>
+                <select class="selectParticipants" name="min">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+                <strong>max</strong>
+                <select class="selectParticipants" name="max">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label>Price</label>
               </div>
               <div class="col-75">
                 <input type="text">
               </div>
             </div>
+            <div class="row">
+              <div class="col-25">
+                <label>Public/Private event</label>
+              </div>
+              <div class="col-75">
+                <select id="selectOption" name="level">
+                  <option value="Public">Public</option>
+                  <option value="Private">Private</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label>Notification</label>
+              </div>
+              <div class="col-75">
+                <label class="checkboxContainer">
+                  <input type="checkbox" id="trigger">
+                  <span class="checkmark"></span>
+                  <div id="hidden_fields">
+                    Time: <input type="text" id="hidden_field" name="hidden">
+                  </div>
+                </label>
+              </div>
+            </div>
+        </div>
       </div>
-    </div>
       <div class="modal-footer">
-        <input type="submit" value="Submit">
-        <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Publish</button> -->
+        <input type="submit" value="Create Event">
       </div>
-    </form>
+      </form>
     </div>
 
   </div>
   </div>
-
+  
+  <script>
+      $( "#autocomplete" ).autocomplete({
+        source: [ "c++", "java", "php", "coldfusion", "javascript", "asp", "ruby" ]
+      });
+      </script>
 </body>
 
 <!-- Footer -->
@@ -214,3 +248,15 @@
 <!-- Footer -->
 
 </html>
+
+<!-- <script>
+  var tags = ["c++", "java", "php", "coldfusion", "javascript", "asp", "ruby"];
+  $("#autocomplete").autocomplete({
+    source: function (request, response) {
+      var matcher = new RegExp("^" + $.ui.autocomplete.escapeRegex(request.term), "i");
+      response($.grep(tags, function (item) {
+        return matcher.test(item);
+      }));
+    }
+  });
+</script> -->
