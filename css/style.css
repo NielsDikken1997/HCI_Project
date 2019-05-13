@@ -82,6 +82,21 @@ navbar-brand{
   animation-duration: 0.4s
 }
 
+/* Modal Content */
+.modal-content-P {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
 .modal-dialog{
   overflow-y: initial !important
 }
@@ -123,6 +138,12 @@ navbar-brand{
 .modal-body {
   padding: 0px 10px;
   height: 505px;
+  overflow-y: auto;
+}
+
+.modal-body-P {
+  padding: 0px 10px;
+  height: 150px;
   overflow-y: auto;
 }
 
