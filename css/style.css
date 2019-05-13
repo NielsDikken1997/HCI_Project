@@ -126,6 +126,12 @@ navbar-brand{
   overflow-y: auto;
 }
 
+.modal-body-P {
+  padding: 0px 10px;
+  height: 300px;
+  overflow-y: auto;
+}
+
 .modal-footer {
   /* padding: 2px 16px; */
   background-color: grey;
