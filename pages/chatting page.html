@@ -27,6 +27,18 @@
 
   <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <style>
+        #top_bar{
+         box-shadow:0 2px 5px #C0C0C0 ;
+         
+        }
+        #chatting_box{
+   
+   box-shadow:2px 0 5px #C0C0C0 ;
+   
+  }
+ 
+   </style>
 </head>
 
 <header>
@@ -67,7 +79,7 @@
 
      <div class="row align-items-center" id="left-navbar">
          <div class="col-md-3">
-             <img src="img/profile.png" alt="myprofile"style="width:50px;height:50px;">
+             <img src="/img/profile.png" alt="myprofile"style="width:50px;height:50px;">
          </div>
          <div class="col-md-9">
            <h4>Sierra Ferguson</h4>
@@ -94,17 +106,34 @@
    
    <!-- Container -->
    <div class="col-md-8" id="main-content">
+
+                 <div class="col-md-12" id="top_bar">
+                        <div class="col-md-2" >
+                                <img id="padelGroup2" src="/img/padelGroup2.jpeg" style="width:50px; height:contain;">    
+                            </div>
+                    <div class="col-md-9" >
+                        <h3>Aluche Group Padel</h3>
+                    </div>
+                    <div class="col-md-1" >
+                        <button onclick="window.location.href='groupResults.html'" style="color:steelblue; background:white;top:20px; right:10px; position:relative;float:right;">X</button>
+                    </div>
+                 </div>
                 <!-- image -->
-                <div class="col-md-8" id="main-content">
-                        <img id="chatting_box" src="chatting box.png" width="700px" height="440px">
+                <div class="col-md-8" >
+                        <img id="chatting_box" src="/img/chatting box.png" style="width:650px; height:contain;">
                 </div>
                 <!-- button -->
-                <div class="col-md-2">
-                        <a href="#" class="btn btn-primary" >See Events</a>
-              
-                        <a href="#" class="btn btn-primary">See Media</a>
-                        <a href="#" class="btn btn-primary">Join this Group</a>
-                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#underConst">Under Construction Button</button>
+                <div class="col-md-4" style="padding:25px;" >
+                        
+                        <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#underConst"  >See Events</button>
+                        <br></br>
+                        <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#underConst">See Media</button>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#apply">Join this Group</button>
           
                         <!-- Modal -->
                         <div class="modal fade" id="underConst" role="dialog" >
@@ -124,6 +153,24 @@
                               </div>
                           </div>
                         </div>
+
+                        <div class="modal fade" id="apply" role="dialog">
+                                <div class="modal-dialog">
+                                  <div class="modal-content-P">
+                                    <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      <h4 class="modal-title">Request Send!</h4>
+                                    </div>
+                                    <div class="modal-body-P">
+                                          <p>Congrats! Your request has been successfully sent it</p>
+                                          <img id="imgModal" src="/img/ok.png" alt="ok">
+                                    </div>
+                                    <div class="modal-footer">
+                                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
                 </div>
    </div>
    <div class="col-md-2">
