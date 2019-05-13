@@ -47,16 +47,6 @@ a{
     padding: 20px;
 }
 
-#imgPadelCards {
-  border-top-left-radius: 3%;
-  border-top-right-radius: 3%;
-  width:236px;
-  height:100px;
-}
-
-#c {
-  text-align:center;
-}
 
 navbar-brand{
   font-size: large;
@@ -237,6 +227,28 @@ input[type=submit]:hover {
   content: "";
   display: table;
   clear: both;
+}
+
+
+#imgPadelCards {
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
+  /*width:236px;*/
+  width:contain;
+  height:100px;
+}
+
+  #imgModal {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:80px;
+  height:80px;
+}
+
+
+#c {
+  text-align:center;
 }
 
 @media screen and (max-width: 600px) {

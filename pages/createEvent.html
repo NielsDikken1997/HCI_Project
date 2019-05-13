@@ -17,9 +17,41 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-  <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script>
+    $(function () {
+      var availableTags = [
+        "ActionScript",
+        "AppleScript",
+        "Asp",
+        "BASIC",
+        "C",
+        "C++",
+        "Clojure",
+        "COBOL",
+        "ColdFusion",
+        "Erlang",
+        "Fortran",
+        "Groovy",
+        "Haskell",
+        "Java",
+        "JavaScript",
+        "Lisp",
+        "Perl",
+        "PHP",
+        "Python",
+        "Ruby",
+        "Scala",
+        "Scheme"
+      ];
+      $("#tags").autocomplete({
+        source: availableTags
+      });
+    });
+  </script> -->
 
   <link rel="icon" href="/img/Favicon.png">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
@@ -125,8 +157,10 @@
         <div class="modal-body">
           <form action="/index.html">
             <div class="row">
-              <label for="autocomplete">Select: </label>
-              <input id="autocomplete">
+              <div class="ui-widget">
+                <label for="tags">Tags: </label>
+                <input id="tags">
+              </div>
               <!-- <div class="col-25">
                 <label>Location</label>
               </div>
@@ -233,12 +267,6 @@
 
   </div>
   </div>
-  
-  <script>
-      $( "#autocomplete" ).autocomplete({
-        source: [ "c++", "java", "php", "coldfusion", "javascript", "asp", "ruby" ]
-      });
-      </script>
 </body>
 
 <!-- Footer -->
@@ -248,15 +276,3 @@
 <!-- Footer -->
 
 </html>
-
-<!-- <script>
-  var tags = ["c++", "java", "php", "coldfusion", "javascript", "asp", "ruby"];
-  $("#autocomplete").autocomplete({
-    source: function (request, response) {
-      var matcher = new RegExp("^" + $.ui.autocomplete.escapeRegex(request.term), "i");
-      response($.grep(tags, function (item) {
-        return matcher.test(item);
-      }));
-    }
-  });
-</script> -->
