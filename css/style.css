@@ -203,7 +203,7 @@ input {
   resize: vertical;
 }
 
-label {
+label#labelModal {
   padding: 12px 12px 12px 10px;
   display: inline-block;
   font-size: 18px;
