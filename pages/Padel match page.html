@@ -16,14 +16,14 @@
   <title>HobbyLink</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="../img/Favicon.png">
+  <link rel="icon" href="./img/Favicon.png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
   
-  <script src="../js/jquery-3.4.1.min.js"></script>
+  <script src="/js/jquery-3.4.1.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <script src="../js/script.js"></script>
+  <script src="/js/script.js"></script>
 
   <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -47,7 +47,7 @@
      <nav class="navbar fixed-top navbar-light bg-light align-items-center">
        <div class="row">
          <div class="col-md-2">
-             <a class="navbar-brand" href="../index.html"> <i class="fas fa-link"></i> HobbyLink</a>
+             <a class="navbar-brand" href="/index.html"> <i class="fas fa-link"></i> HobbyLink</a>
 
          </div>
           <div class="col-md-8">
@@ -79,7 +79,7 @@
 
      <div class="row align-items-center" id="left-navbar">
          <div class="col-md-3">
-             <img src="../img/profile.png" alt="myprofile"style="width:50px;height:50px;">
+             <img src="/img/profile.png" alt="myprofile"style="width:50px;height:50px;">
          </div>
          <div class="col-md-9">
            <h4>Sierra Ferguson</h4>
@@ -90,19 +90,14 @@
      
    <div class="navbar">
        <ul class="nav nav-list">
-           <li class="active"><a href="../index.html"><i class="fas fa-th-large"></i> Dashboard</a></li>
-           <li><a href="selectHobbyTask1.html"><i class="fas fa-search"></i> Explore Hobbies</a></li>
-           <li><a href="eventResults.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
+           <li class="active"><a href="#all"><i class="fas fa-th-large"></i> Dashboard</a></li>
+           <li><a href="#all"><i class="fas fa-search"></i> Explore Hobbies</a></li>
+           <li><a href="#all"><i class="fas fa-calendar-alt"></i> Events</a></li>
            <li><a href="#all"><i class="fas fa-users"></i> My Groups</a></li>
            <li><a href="#all"><i class="far fa-comment-alt border-bottom"></i> Messenger</a></li>
            <li class="divider"></li>
            <li><a href="#all"><i class="fas fa-ellipsis-h"></i> Settings</a></li>
-<<<<<<< HEAD
-           <li><a href="/pages/createEvent.html"><i class="fas fa-ellipsis-h"></i> Create Event</a></li>
-=======
-           <li><a href="../pages/groupResults.html"><i class="fas fa-ellipsis-h"></i> Group Results</a></li>
-           <li><a href="../pages/createEvent.html"><i class="fas fa-ellipsis-h"></i> Create Event</a></li>
->>>>>>> 94edc54a31795290860bd14d38f25478d6f47454
+
          </ul>
    </div>
      
@@ -113,10 +108,11 @@
 
                  <div class="col-md-12" id="top_bar">
                         <div class="col-md-2" >
-                                <img id="padelGroup2" src="../img/padelGroup2.jpeg" style="width:50px; height:contain;">    
+                                <img id="padelGroup2" src="/img/padelGroup2.jpeg" style="width:50px; height:contain;">    
                             </div>
                     <div class="col-md-9" >
-                        <h3>Aluche Group Padel</h3>
+                        <h3>Padel Match at Aluche</h3>
+                        <h5>Aluche Group Padel (Amateurs)</h5>
                     </div>
                     <div class="col-md-1" >
                         <button onclick="window.location.href='groupResults.html'" style="color:steelblue; background:white;top:20px; right:10px; position:relative;float:right;">X</button>
@@ -124,20 +120,20 @@
                  </div>
                 <!-- image -->
                 <div class="col-md-8" >
-                        <img id="chatting_box" src="../img/chatting box.png" style="width:550px; height:contain;">
+                        <img id="chatting_box" src="/img/Event.png" style="width:550px; height:contain;">
                 </div>
                 <!-- button -->
                 <div class="col-md-4" style="padding:25px;" >
                         
-                        <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#underConst"  >See Events</button>
-                        <br></br>
-                        <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#underConst">See Media</button>
+                    <img id="chatting_box" src="../img/Users going.png" style="width:550px; height:contain;">
                         <br></br>
                         <br></br>
                         <br></br>
                         <br></br>
                         <br></br>
-                        <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#apply">Join this Group</button>
+                        <br></br>
+                        <br></br>
+                        <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#apply">Join this Event</button>
           
                         <!-- Modal -->
                         <div class="modal fade" id="underConst" role="dialog" >
@@ -149,7 +145,7 @@
                                 </div>
                                 <div class="modal-body-P">
                                       <p>Sorry, this section is not available yet.</p>
-                                      <img id="imgModal" src="../img/underConstruction.jpg" alt="ok">
+                                      <img id="imgModal" src="/img/underConstruction.jpg" alt="ok">
                                 </div>
                                 <div class="modal-footer">
                                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -167,7 +163,7 @@
                                     </div>
                                     <div class="modal-body-P">
                                           <p>Congrats! Your request has been successfully sent it</p>
-                                          <img id="imgModal" src="../img/ok.png" alt="ok">
+                                          <img id="imgModal" src="/img/ok.png" alt="ok">
                                     </div>
                                     <div class="modal-footer">
                                           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
