@@ -3,7 +3,7 @@ jQuery(document).ready(function () {
     console.log("document is ready");
 
     $('#selectTime').timepicker({ 'timeFormat': 'H:i', 'step': 15, 'scrollDefault': 'now' });
-    $('#selectTimeNotification').timepicker({ 'timeFormat': 'H:i', 'step': 30,'minTime': '0:00','maxTime': '10:00', 'mins'});
+    $('#selectTimeNotification').timepicker({ 'timeFormat': 'H:i', 'step': 30,'minTime': '0:00','maxTime': '10:00'});
     $('#selectDuration').timepicker({ 'timeFormat': 'H:i', 'step': 15, 'scrollDefault': 'now' });
 
     $('#selectTime').on('changeTime', function () {
