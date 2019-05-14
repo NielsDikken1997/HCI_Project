@@ -1,0 +1,187 @@
+<!-- 
+# EIT Digital Master Degree, HCI
+# Authors:
+#     Aceituno Ferro, Pablo
+#     Dikken, Niels
+#     Hou, Peizhe
+#     Manzano, Izquierdo, Paula
+
+# Main Page
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>HobbyLink</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="./img/Favicon.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+  <script src="/js/jquery-3.4.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="/js/script.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <style>
+        #top_bar{
+         box-shadow:0 2px 5px #C0C0C0 ;
+         
+        }
+        #chatting_box{
+   
+   box-shadow:2px 0 5px #C0C0C0 ;
+   
+  }
+ 
+   </style>
+</head>
+
+<header>
+  <div class="container-fluid">	
+
+     <nav class="navbar fixed-top navbar-light bg-light align-items-center">
+       <div class="row">
+         <div class="col-md-2">
+             <a class="navbar-brand" href="/index.html"> <i class="fas fa-link"></i> HobbyLink</a>
+
+         </div>
+          <div class="col-md-8">
+            <div class="row">
+             <div class="col-md-11">
+                 <div class="form-group">
+                     <input type="search" class="form-control" id="exampleFormControlInput1" placeholder="Global Search">
+                 </div>
+             </div> 
+             <div class="col-md-1 float-right">
+                 <i class="far fa-bell fa-2x light-grey"></i>
+             </div>  
+            </div>
+             
+          </div> 
+           
+       </div>
+         
+     </nav>
+         
+  </div>
+</header>
+
+<body>
+<div class="container-fluid">
+ <div class="row">
+   <!-- Left Side -->
+   <div class="col-md-2" >
+
+     <div class="row align-items-center" id="left-navbar">
+         <div class="col-md-3">
+             <img src="/img/profile.png" alt="myprofile"style="width:50px;height:50px;">
+         </div>
+         <div class="col-md-9">
+           <h4>Sierra Ferguson</h4>
+           <p>sierraferg@gmail.com</p>
+         </div>
+     </div>
+     
+     
+   <div class="navbar">
+       <ul class="nav nav-list">
+           <li class="active"><a href="#all"><i class="fas fa-th-large"></i> Dashboard</a></li>
+           <li><a href="#all"><i class="fas fa-search"></i> Explore Hobbies</a></li>
+           <li><a href="#all"><i class="fas fa-calendar-alt"></i> Events</a></li>
+           <li><a href="#all"><i class="fas fa-users"></i> My Groups</a></li>
+           <li><a href="#all"><i class="far fa-comment-alt border-bottom"></i> Messenger</a></li>
+           <li class="divider"></li>
+           <li><a href="#all"><i class="fas fa-ellipsis-h"></i> Settings</a></li>
+
+         </ul>
+   </div>
+     
+   </div>
+   
+   <!-- Container -->
+   <div class="col-md-8" id="main-content">
+
+                 <div class="col-md-12" id="top_bar">
+                        <div class="col-md-2" >
+                                <img id="padelGroup2" src="/img/padelGroup2.jpeg" style="width:50px; height:contain;">    
+                            </div>
+                    <div class="col-md-9" >
+                        <h3>Padel Match at Aluche</h3>
+                        <h5>Aluche Group Padel (Amateurs)</h5>
+                    </div>
+                    <div class="col-md-1" >
+                        <button onclick="window.location.href='groupResults.html'" style="color:steelblue; background:white;top:20px; right:10px; position:relative;float:right;">X</button>
+                    </div>
+                 </div>
+                <!-- image -->
+                <div class="col-md-8" >
+                        <img id="chatting_box" src="/img/Event.png" style="width:550px; height:contain;">
+                </div>
+                <!-- button -->
+                <div class="col-md-4" style="padding:25px;" >
+                        
+                    <img id="chatting_box" src="../img/Users going.png" style=" height:contain;">
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        
+                        <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#apply">Join this Event</button>
+          
+                        <!-- Modal -->
+                        <div class="modal fade" id="underConst" role="dialog" >
+                            <div class="modal-dialog">
+                              <div class="modal-content-P">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">Under Construction</h4>
+                                </div>
+                                <div class="modal-body-P">
+                                      <p>Sorry, this section is not available yet.</p>
+                                      <img id="imgModal" src="/img/underConstruction.jpg" alt="ok">
+                                </div>
+                                <div class="modal-footer">
+                                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+
+                        <div class="modal fade" id="apply" role="dialog">
+                                <div class="modal-dialog">
+                                  <div class="modal-content-P">
+                                    <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      <h4 class="modal-title">Request Send!</h4>
+                                    </div>
+                                    <div class="modal-body-P">
+                                          <p>Congrats! Your request has been successfully sent it</p>
+                                          <img id="imgModal" src="/img/ok.png" alt="ok">
+                                    </div>
+                                    <div class="modal-footer">
+                                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
+                </div>
+   </div>
+   <div class="col-md-2">
+
+   </div>
+ </div>
+</div>
+</body>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+<p>EIT Digital Master Degree, HCI Project.</p>
+</footer>
+<!-- Footer -->
+
+</html>
