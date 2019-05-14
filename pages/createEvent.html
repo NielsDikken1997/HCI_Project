@@ -17,42 +17,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <script>
-    $(function () {
-      var availableTags = [
-        "ActionScript",
-        "AppleScript",
-        "Asp",
-        "BASIC",
-        "C",
-        "C++",
-        "Clojure",
-        "COBOL",
-        "ColdFusion",
-        "Erlang",
-        "Fortran",
-        "Groovy",
-        "Haskell",
-        "Java",
-        "JavaScript",
-        "Lisp",
-        "Perl",
-        "PHP",
-        "Python",
-        "Ruby",
-        "Scala",
-        "Scheme"
-      ];
-      $("#tags").autocomplete({
-        source: availableTags
-      });
-    });
-  </script>
-
   <link rel="icon" href="/img/Favicon.png">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/timepicker@1.11.15/jquery.timepicker.css">
@@ -157,16 +121,18 @@
         <div class="modal-body">
           <form action="/index.html">
             <div class="row">
-              <div class="ui-widget">
-                <label id="labelModal" for="tags">Tags: </label>
-                <input id="tags">
-              </div>
-              <!-- <div class="col-25">
-                <label>Location</label>
+
+              <!--Make sure the form has the autocomplete function switched off:-->
+              <div class="col-25">
+                <label id="labelModal">Location</label>
               </div>
               <div class="col-75">
-                <input type="text" placeholder="Search">
-              </div> -->
+                <form autocomplete="off">
+                  <div class="autocomplete" style="width:300px;">
+                    <input id="myInput" type="text" name="myCountry" placeholder="Search">
+                  </div>
+                </form>
+              </div>
             </div>
             <div class="row">
               <div class="col-25" id="alternateUiWidgetsExample">
@@ -174,16 +140,17 @@
               </div>
               <div class="col-75">
                 <input placeholder="15/05/2019" id="datepicker">
-                <input placeholder="00:00" id="selectTime" class="time ui-timepicker-input" autocomplete="off">
+                <input placeholder="12:00" id="selectTime" class="time ui-timepicker-input" autocomplete="off">
                 <!-- <span id="onselectTarget" style="margin-left: 30px;"></span> -->
               </div>
             </div>
             <div class="row">
               <div class="col-25">
-                <label id="labelModal">Duration</label>
+                <label id="labelModal">Time finish</label>
               </div>
               <div class="col-75">
-                <input class="durationExample" type="text" class="time ui-timepicker-input" autocomplete="off">
+                <input id="finishTime" class="durationExample" type="text" class="time ui-timepicker-input"
+                  autocomplete="off">
               </div>
             </div>
             <div class="row">
@@ -229,12 +196,12 @@
                 <label id="labelModal">Price</label>
               </div>
               <div class="col-75">
-                <input type="text">
+                <input type="text" id="inputPrice" placeholder="Price per person (e.g. € 1.50)">
               </div>
             </div>
             <div class="row">
               <div class="col-25">
-                <label id="labelModal">Public/Private event</label>
+                <label id="labelModal">Public/Private</label>
               </div>
               <div class="col-75">
                 <select id="selectOption" name="level">
@@ -248,11 +215,12 @@
                 <label id="labelModal">Notification</label>
               </div>
               <div class="col-75">
-                <label id="labelModal" class="checkboxContainer">
+                <label class="checkboxContainer">
                   <input type="checkbox" id="trigger">
                   <span class="checkmark"></span>
                   <div id="hidden_fields">
-                    Time: <input type="text" id="hidden_field" name="hidden">
+                    Time before event: <input placeholder="1:00 hour" type="text" id="selectTimeNotification"
+                      class="time ui-timepicker-input" autocomplete="off" name="hidden">
                   </div>
                 </label>
               </div>
@@ -267,6 +235,112 @@
 
   </div>
   </div>
+
+  <script>
+    function autocomplete(inp, arr) {
+      /*the autocomplete function takes two arguments,
+      the text field element and an array of possible autocompleted values:*/
+      var currentFocus;
+      /*execute a function when someone writes in the text field:*/
+      inp.addEventListener("input", function (e) {
+        var a, b, i, val = this.value;
+        /*close any already open lists of autocompleted values*/
+        closeAllLists();
+        if (!val) { return false; }
+        currentFocus = -1;
+        /*create a DIV element that will contain the items (values):*/
+        a = document.createElement("DIV");
+        a.setAttribute("id", this.id + "autocomplete-list");
+        a.setAttribute("class", "autocomplete-items");
+        /*append the DIV element as a child of the autocomplete container:*/
+        this.parentNode.appendChild(a);
+        /*for each item in the array...*/
+        for (i = 0; i < arr.length; i++) {
+          /*check if the item starts with the same letters as the text field value:*/
+          if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+            /*create a DIV element for each matching element:*/
+            b = document.createElement("DIV");
+            /*make the matching letters bold:*/
+            b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+            b.innerHTML += arr[i].substr(val.length);
+            /*insert a input field that will hold the current array item's value:*/
+            b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+            /*execute a function when someone clicks on the item value (DIV element):*/
+            b.addEventListener("click", function (e) {
+              /*insert the value for the autocomplete text field:*/
+              inp.value = this.getElementsByTagName("input")[0].value;
+              /*close the list of autocompleted values,
+              (or any other open lists of autocompleted values:*/
+              closeAllLists();
+            });
+            a.appendChild(b);
+          }
+        }
+      });
+      /*execute a function presses a key on the keyboard:*/
+      inp.addEventListener("keydown", function (e) {
+        var x = document.getElementById(this.id + "autocomplete-list");
+        if (x) x = x.getElementsByTagName("div");
+        if (e.keyCode == 40) {
+          /*If the arrow DOWN key is pressed,
+          increase the currentFocus variable:*/
+          currentFocus++;
+          /*and and make the current item more visible:*/
+          addActive(x);
+        } else if (e.keyCode == 38) { //up
+          /*If the arrow UP key is pressed,
+          decrease the currentFocus variable:*/
+          currentFocus--;
+          /*and and make the current item more visible:*/
+          addActive(x);
+        } else if (e.keyCode == 13) {
+          /*If the ENTER key is pressed, prevent the form from being submitted,*/
+          e.preventDefault();
+          if (currentFocus > -1) {
+            /*and simulate a click on the "active" item:*/
+            if (x) x[currentFocus].click();
+          }
+        }
+      });
+      function addActive(x) {
+        /*a function to classify an item as "active":*/
+        if (!x) return false;
+        /*start by removing the "active" class on all items:*/
+        removeActive(x);
+        if (currentFocus >= x.length) currentFocus = 0;
+        if (currentFocus < 0) currentFocus = (x.length - 1);
+        /*add class "autocomplete-active":*/
+        x[currentFocus].classList.add("autocomplete-active");
+      }
+      function removeActive(x) {
+        /*a function to remove the "active" class from all autocomplete items:*/
+        for (var i = 0; i < x.length; i++) {
+          x[i].classList.remove("autocomplete-active");
+        }
+      }
+      function closeAllLists(elmnt) {
+        /*close all autocomplete lists in the document,
+        except the one passed as an argument:*/
+        var x = document.getElementsByClassName("autocomplete-items");
+        for (var i = 0; i < x.length; i++) {
+          if (elmnt != x[i] && elmnt != inp) {
+            x[i].parentNode.removeChild(x[i]);
+          }
+        }
+      }
+      /*execute a function when someone clicks in the document:*/
+      document.addEventListener("click", function (e) {
+        closeAllLists(e.target);
+      });
+    }
+
+    /*An array containing all the country names in the world:*/
+    var countries = ["Padel Moncloa (225 mtrs)", "Padel Argüelles (525 mtrs)", "Padel Sol (1025 mtrs)", "Padel Lavapies (2025 mtrs)"];
+    /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+    autocomplete(document.getElementById("myInput"), countries);
+
+  </script>
+
 </body>
 
 <!-- Footer -->

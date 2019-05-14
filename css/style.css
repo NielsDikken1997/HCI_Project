@@ -91,7 +91,7 @@ span{
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  /* overflow: auto; Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
@@ -166,7 +166,7 @@ span{
 
 .modal-body {
   padding: 0px 10px;
-  height: 505px;
+  height: 475px;
   overflow-y: auto;
 }
 
@@ -217,6 +217,29 @@ input#selectTime{
   background-image: url('/img/clockLight.svg');
   background-repeat: no-repeat;
   background-position: 150px;
+  background-size: 20px;
+}
+
+input#finishTime{
+  background-image: url('/img/clockLight.svg');
+  background-repeat: no-repeat;
+  background-position: 336px;
+  background-size: 20px;
+}
+
+input#inputPrice{
+  background-image: url('/img/euroDark.svg');
+  background-repeat: no-repeat;
+  background-position: 5px;
+  background-size: 12px;
+  padding: 12px 20px 12px 25px;
+}
+
+input#selectTimeNotification{
+  width: 54.5%;
+  background-image: url('/img/clockLight.svg');
+  background-repeat: no-repeat;
+  background-position: 173px;
   background-size: 20px;
 }
 
@@ -316,9 +339,9 @@ input[type=submit]:hover {
   display: block;
   position: relative;
   padding-left: 35px;
+  padding-top: 2px;
   margin-bottom: 12px;
   cursor: pointer;
-  font-size: 22px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -338,6 +361,7 @@ input[type=submit]:hover {
 .checkmark {
   position: absolute;
   left: 0;
+  top: 10px;
   height: 25px;
   width: 25px;
   background-color: rgb(255, 255, 255);
@@ -379,11 +403,58 @@ input[type=submit]:hover {
   transform: rotate(45deg);
 }
 
-input#hidden_field {
-  width: 45%;
+/* input#hidden_field {
+  width: 4%;
   height: 20px;
+  padding-left: 20px;
+} */
+
+/* #hidden_fields{
+  font-size: 15px;
+  padding-left: 20px;
+  padding-top: 2px;
+} */
+
+/*the container must be positioned relative:*/
+.autocomplete {
+  position: relative;
+  display: inline-block;
 }
 
-#hidden_fields{
-  font-size: 15px;
+input#myInput {
+  width: 122%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
 }
