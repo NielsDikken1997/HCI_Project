@@ -4,11 +4,11 @@
   <title>HobbyLink</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="/img/Favicon.png">
+  <link rel="icon" href="../img/Favicon.png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
 
   <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
 
@@ -95,7 +95,7 @@
                    <p> 5.6 kms </p>
                    <p> 25th March 2019 </p>
                    <p> 11:00 AM </p>
-                   <a href="#" class="btn btn-primary">see more</a>
+                   <a href="#" class="btn btn-primary"data-toggle="modal" data-target="#underConst">see more</a>
               </div>
             </div>
           </div>
@@ -110,7 +110,7 @@
                    <p> 0.4 kms </p>
                    <p> 27th March 2019 </p>
                    <p> 12:00 AM </p>
-                   <a href="#" class="btn btn-primary">see more</a>
+                   <a href="#" class="btn btn-primary"data-toggle="modal" data-target="#underConst">see more</a>
               </div>
             </div>
           </div>
@@ -125,7 +125,7 @@
                    <p> 7.6 kms </p>
                    <p> 26th March 2019 </p>
                    <p> 10:00 AM </p>
-                   <a href="#" class="btn btn-primary">see more</a>
+                   <a href="#" class="btn btn-primary"data-toggle="modal" data-target="#underConst">see more</a>
               </div>
             </div>
           </div>
@@ -140,7 +140,7 @@
                    <p> 1.6 kms </p>
                    <p> 29th March 2019 </p>
                    <p> 10:00 AM </p>
-                   <a href="#" class="btn btn-primary">see more</a>
+                   <a href="#" class="btn btn-primary"data-toggle="modal" data-target="#underConst">see more</a>
               </div>
             </div>
           </div>
@@ -170,7 +170,7 @@
                    <p> 1.6 kms </p>
                    <p> 26th March 2019 </p>
                    <p> 17:00 AM </p>
-                   <a href="#" class="btn btn-primary">see more</a>
+                   <a href="#" class="btn btn-primary"data-toggle="modal" data-target="#underConst">see more</a>
               </div>
             </div>
           </div>
@@ -185,7 +185,7 @@
                    <p> 3.0 kms </p>
                    <p> 26th March 2019 </p>
                    <p> 10:00 AM </p>
-                   <a href="#" class="btn btn-primary">see more</a>
+                   <a href="#" class="btn btn-primary"data-toggle="modal" data-target="#underConst">see more</a>
               </div>
             </div>
           </div>
@@ -200,13 +200,31 @@
                    <p> 15.9 kms </p>
                    <p> 28th March 2019 </p>
                    <p> 18:00 AM </p>
-                   <a href="#" class="btn btn-primary">see more</a>
+                   <a href="#" class="btn btn-primary"data-toggle="modal" data-target="#underConst">see more</a>
               </div>
             </div>
           </div>
-          
 
-         
+          <!-- Modal -->
+          <div class="modal fade" id="underConst" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content-P">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Under Construction</h4>
+                </div>
+                <div class="modal-body-P">
+                      <p>Sorry, this section is not available yet.</p>
+                      <img id="imgModal" src="../img/underConstruction.jpg" alt="ok">
+                </div>
+                <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+          </div>
+        </div>
+
+
 
 
 
