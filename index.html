@@ -16,14 +16,14 @@
   <title>HobbyLink</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="../HCI_Project/img/Favicon.png">
+  <link rel="icon" href="../img/Favicon.png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../HCI_Project/css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
   
-  <script src="../HCI_Project/js/jquery-3.4.1.min.js"></script>
+  <script src="../js/jquery-3.4.1.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <script src="../HCI_Project/js/script.js"></script>
+  <script src="../js/script.js"></script>
 
   <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -35,7 +35,7 @@
      <nav class="navbar fixed-top navbar-light bg-light align-items-center">
        <div class="row">
          <div class="col-md-2">
-             <a class="navbar-brand" href="../HCI_Project/index.html"> <i class="fas fa-link"></i> HobbyLink</a>
+             <a class="navbar-brand" href="../index.html"> <i class="fas fa-link"></i> HobbyLink</a>
 
          </div>
           <div class="col-md-8">
@@ -67,7 +67,7 @@
 
      <div class="row align-items-center" id="left-navbar">
          <div class="col-md-3">
-             <img src="../HCI_Project/img/profile.png" alt="myprofile"style="width:50px;height:50px;">
+             <img src="../img/profile.png" alt="myprofile"style="width:50px;height:50px;">
          </div>
          <div class="col-md-9">
            <h4>Sierra Ferguson</h4>
@@ -78,10 +78,19 @@
      
    <div class="navbar">
        <ul class="nav nav-list">
-           <li class="active"><a href="../HCI_Project/index.html"><i class="fas fa-th-large"></i> Dashboard</a></li>
-           <li><a href="../HCI_Project/pages/selectHobbyTask1.html"><i class="fas fa-search"></i> Explore Hobbies</a></li>
-           <li><a href="../HCI_Project/pages/eventResults.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
-           <li><a href="../HCI_Project/pages/Aluche group page.html"><i class="fas fa-users"></i> My Groups</a></li>
+           <li class="active"><a href="index.html"><i class="fas fa-th-large"></i> Dashboard</a></li>
+           <li><a href="pages/selectHobbyTask1.html"><i class="fas fa-search"></i> Explore Hobbies</a></li>
+           <li><a href="pages/eventResults.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
+           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"s><i class="fas fa-users"></i> My Groups</a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Padel Moncloa</a></li>
+              <li><a href="pages/Aluche group page.html">Aluche Group Padel</a></li>
+              <li><a href="#">Japanese in Madrid</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Create a new group</a></li>
+            </ul>
+          
+          </li>
            <li><a href="#all"><i class="far fa-comment-alt border-bottom"></i> Messenger</a></li>
            <li class="divider"></li>
            <li><a href="#all"><i class="fas fa-ellipsis-h"></i> Settings</a></li>
