@@ -207,28 +207,28 @@ select.selectParticipants{
 }
 
 input#datepicker{
-  background-image: url('/img/calendarLight.svg');
+  background-image: url('../img/calendarLight.svg');
   background-repeat: no-repeat;
   background-position: 150px;
   background-size: 20px;
 }
 
 input#selectTime{
-  background-image: url('/img/clockLight.svg');
+  background-image: url('../img/clockLight.svg');
   background-repeat: no-repeat;
   background-position: 150px;
   background-size: 20px;
 }
 
 input#finishTime{
-  background-image: url('/img/clockLight.svg');
+  background-image: url('../img/clockLight.svg');
   background-repeat: no-repeat;
   background-position: 336px;
   background-size: 20px;
 }
 
 input#inputPrice{
-  background-image: url('/img/euroDark.svg');
+  background-image: url('../img/euroDark.svg');
   background-repeat: no-repeat;
   background-position: 5px;
   background-size: 12px;
@@ -237,7 +237,7 @@ input#inputPrice{
 
 input#selectTimeNotification{
   width: 54.5%;
-  background-image: url('/img/clockLight.svg');
+  background-image: url('../img/clockLight.svg');
   background-repeat: no-repeat;
   background-position: 173px;
   background-size: 20px;
