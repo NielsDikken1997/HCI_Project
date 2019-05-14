@@ -33,10 +33,6 @@ a{
   color: #00a1d3;
 }
 
-#left-navbar{
- 
-}
-
 .light-grey{
     color: silver;
 }
@@ -51,6 +47,39 @@ a{
 navbar-brand{
   font-size: large;
 }
+
+subtitle_cat{
+  color: red;
+  font-family: 'Roboto', sans-serif;
+  font-size: small;
+}
+.interactions{
+  color:silver;
+  font-size:small;
+}
+
+.likes{
+  width: 70px;
+  height: 35px;
+  float:left;
+}
+
+.form-check-input{
+  width: 10%;
+}
+
+.btn-task1{
+  align-content: center;
+}
+
+span{
+  align-self: right;
+}
+
+.categoryimg{
+  width: 100%;
+}
+
 
 /* The Modal (background) */
 .modal {
@@ -253,6 +282,9 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
   width: auto;
+}
+#maps{
+  text-align: center;
 }
 
 .col-25 {
