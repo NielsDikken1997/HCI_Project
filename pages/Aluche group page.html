@@ -8,128 +8,352 @@
 
 # Aluche group page
 -->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <title>Aluche group page</title>
+  <title>HobbyLink</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="icon" href="../img/Favicon.png">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/timepicker@1.11.15/jquery.timepicker.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/style.css">
 
-  <script src="../js/script.js"></script>
+  <script src="../js/jquery-3.4.1.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/timepicker@1.11.15/jquery.timepicker.min.js"></script>
+  <script src="../js/script.js"></script>
 
   <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 
 <header>
-  <div class="container-fluid">	
-
-     <nav class="navbar fixed-top navbar-light bg-light align-items-center">
-       <div class="row">
-         <div class="col-md-2">
-             <a class="navbar-brand" href="../index.html"> <i class="fas fa-link"></i> HobbyLink</a>
-
-         </div>
-          <div class="col-md-8">
-            <div class="row">
-             <div class="col-md-11">
-                 <div class="form-group">
-                     <input type="search" class="form-control" id="exampleFormControlInput1" placeholder="Global Search">
-                 </div>
-             </div> 
-             <div class="col-md-1 float-right">
-                 <i class="far fa-bell fa-2x light-grey"></i>
-             </div>  
+  <div class="container-fluid">
+    <nav class="navbar fixed-top navbar-light bg-light align-items-center">
+      <div class="row">
+        <div class="col-md-2">
+          <a class="navbar-brand" href="../index.html"> <i class="fas fa-link"></i> HobbyLink</a>
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-11">
+              <div class="form-group">
+                <input type="search" class="form-control" id="exampleFormControlInput1" placeholder="Global Search">
+              </div>
             </div>
-             
-          </div> 
-           
-       </div>
-         
-     </nav>
-         
+            <div class="col-md-1 float-right">
+              <i class="far fa-bell fa-2x light-grey"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
   </div>
 </header>
 
 <body id="Aluche group page">
-<div class="container-fluid">
+  <div class="container-fluid">
     <div id="group_title" style="background-color:#4682B4">
-        <h3 style="text-align: center; color:white;" >Aluche Group Padel</h3>
+      <h3 style="text-align: center; color:white;">Aluche Group Padel</h3>
     </div>
- <div class="row">
-   <!-- Left Side -->
-   <div class="col-md-2" >
+    <div class="row">
+      <!-- Left Side -->
+      <div class="col-md-2">
 
-     <div class="row align-items-center" id="left-navbar">
-         <div class="col-md-3">
-             <img src="../img/profile.png" alt="myprofile"style="width:50px;height:50px;">
-         </div>
-         <div class="col-md-9">
-           <h4>Sierra Ferguson</h4>
-           <p>sierraferg@gmail.com</p>
-         </div>
-     </div>
-     
-     
-   <div class="navbar">
-       <ul class="nav nav-list">
-          
-           <li><a href="#all"><i class="fas fa-users"></i> List of Members</a></li>
-           <li><a href="eventResults.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
-           <li><a href="createEvent.html"><i class="fas fa-calendar-plus"></i> Create Event</a></li>
-           <li><a href="#all"><i class="fas fa-newspaper"></i> Media</a></li>
-           <li class="divider"></li>
-           <li><a href="#all"><i class="fas fa-ellipsis-h"></i> Settings</a></li>
-         </ul>
-   </div>
-     
-   </div>
-   
-   <!-- Container -->
-   <div class="col-md-8" id="main-content" ">
-     <!--img src="https://www.aberdeen.com/wp-content/uploads/2016/10/shipping-container-b.jpg",
-          alt="here is the container",
-          style="width:700px;height:400px;"-->
-          <!--<p>lorem ipsum</p>-->
+        <div class="row align-items-center" id="left-navbar">
+          <div class="col-md-3">
+            <img src="../img/profile.png" alt="myprofile" style="width:50px;height:50px;">
+          </div>
+          <div class="col-md-9">
+            <h4>Sierra Ferguson</h4>
+            <p>sierraferg@gmail.com</p>
+          </div>
+        </div>
 
-          <!-- Begin Page Content -->
-       
 
-                <!-- Page Heading -->
-                <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                  <h1 class="h3 mb-0 text-gray-800">News in Group</h1>
-                </div>
-                <!-- Youtube video 1 -->
-               
-                  
-                    <div class="card-body">
-                      <iframe width="610" height="315"  src="https://www.youtube.com/embed/XSOx4wMnNbA" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    </div>
-                    <h5>Yesterdays training with the boys, we won 3-0.</h5>
+        <div class="navbar">
+          <ul class="nav nav-list">
+
+            <li><a href="#all"><i class="fas fa-users"></i> List of Members</a></li>
+            <li><a href="../pages/eventResults.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
+            <li><a data-target="#myModal" data-toggle="modal" href="#myModal"><i
+                  class="fas fa-calendar-plus"></i>Create Event</a></li>
+            <li><a href="#all"><i class="fas fa-newspaper"></i> Media</a></li>
+            <li class="divider"></li>
+            <li><a href="#all"><i class="far fa-comment-alt border-bottom"></i> Messenger</a></li>
+            <li><a href="#all"><i class="fas fa-ellipsis-h"></i> Settings</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Container -->
+      <div class="col-md-8" id="main-content" ">
+        <!-- Begin Page Content -->
+
+
+        <!-- Page Heading -->
+        <div class=" d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">News in Group</h1>
+      </div>
+      <!-- Youtube video 1 -->
+      <div class="card-body">
+        <iframe width="610" height="315" src="https://www.youtube.com/embed/XSOx4wMnNbA" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <h5>Yesterdays training with the boys, we won 3-0.</h5>
+    </div>
+  </div>
+  </div>
+  <div class="col-md-2">
+  </div>
+  </div>
+  </div>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+            aria-hidden="true">&times;</span></button>
+        <h2>Create Event</h2>
+      </div>
+      <div class="container">
+        <div class="modal-body">
+          <form action="/index.html">
+            <div class="row">
+
+              <!--Make sure the form has the autocomplete function switched off:-->
+              <div class="col-25">
+                <label id="labelModal">Location</label>
+              </div>
+              <div class="col-75">
+                <form autocomplete="off">
+                  <div class="autocomplete" style="width:300px;">
+                    <input id="myInput" type="text" name="myCountry" placeholder="Search">
                   </div>
-                </div>
-      
-               
-   </div>
-   <div class="col-md-2">
+                </form>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25" id="alternateUiWidgetsExample">
+                <label id="labelModal">Date / Time</label>
+              </div>
+              <div class="col-75">
+                <input placeholder="15/05/2019" id="datepicker">
+                <input placeholder="12:00" id="selectTime" class="time ui-timepicker-input" autocomplete="off">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label id="labelModal">Time finish</label>
+              </div>
+              <div class="col-75">
+                <input id="finishTime" class="durationExample" type="text" class="time ui-timepicker-input"
+                  autocomplete="off">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label id="labelModal">Level</label>
+              </div>
+              <div class="col-75">
+                <select id="mySelect" name="level">
+                  <option value="Beginner">Beginner</option>
+                  <option value="Amateur">Amateur</option>
+                  <option value="Professional">Professional</option>
+                  <option value="Elite">Elite</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label id="labelModal">Participants</label>
+              </div>
+              <div class="col-75">
+                <strong>min</strong>
+                <select class="selectParticipants" name="min">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+                <strong>max</strong>
+                <select class="selectParticipants" name="max">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label id="labelModal">Price</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="inputPrice" placeholder="Price per person (e.g. € 1.50)">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label id="labelModal">Public/Private</label>
+              </div>
+              <div class="col-75">
+                <select id="selectOption" name="level">
+                  <option value="Public">Public</option>
+                  <option value="Private">Private</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label id="labelModal">Notification</label>
+              </div>
+              <div class="col-75">
+                <label class="checkboxContainer">
+                  <input type="checkbox" id="trigger">
+                  <span class="checkmark"></span>
+                  <div id="hidden_fields">
+                    Time before event: <input placeholder="1:00 hour" type="text" id="selectTimeNotification"
+                      class="time ui-timepicker-input" autocomplete="off" name="hidden">
+                  </div>
+                </label>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <input type="submit" value="Create Event">
+      </div>
+      </form>
+    </div>
 
-   </div>
- </div>
-</div>
+  </div>
+  </div>
+
+  <script>
+    function autocomplete(inp, arr) {
+      /*the autocomplete function takes two arguments,
+      the text field element and an array of possible autocompleted values:*/
+      var currentFocus;
+      /*execute a function when someone writes in the text field:*/
+      inp.addEventListener("input", function (e) {
+        var a, b, i, val = this.value;
+        /*close any already open lists of autocompleted values*/
+        closeAllLists();
+        if (!val) { return false; }
+        currentFocus = -1;
+        /*create a DIV element that will contain the items (values):*/
+        a = document.createElement("DIV");
+        a.setAttribute("id", this.id + "autocomplete-list");
+        a.setAttribute("class", "autocomplete-items");
+        /*append the DIV element as a child of the autocomplete container:*/
+        this.parentNode.appendChild(a);
+        /*for each item in the array...*/
+        for (i = 0; i < arr.length; i++) {
+          /*check if the item starts with the same letters as the text field value:*/
+          if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+            /*create a DIV element for each matching element:*/
+            b = document.createElement("DIV");
+            /*make the matching letters bold:*/
+            b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+            b.innerHTML += arr[i].substr(val.length);
+            /*insert a input field that will hold the current array item's value:*/
+            b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+            /*execute a function when someone clicks on the item value (DIV element):*/
+            b.addEventListener("click", function (e) {
+              /*insert the value for the autocomplete text field:*/
+              inp.value = this.getElementsByTagName("input")[0].value;
+              /*close the list of autocompleted values,
+              (or any other open lists of autocompleted values:*/
+              closeAllLists();
+            });
+            a.appendChild(b);
+          }
+        }
+      });
+      /*execute a function presses a key on the keyboard:*/
+      inp.addEventListener("keydown", function (e) {
+        var x = document.getElementById(this.id + "autocomplete-list");
+        if (x) x = x.getElementsByTagName("div");
+        if (e.keyCode == 40) {
+          /*If the arrow DOWN key is pressed,
+          increase the currentFocus variable:*/
+          currentFocus++;
+          /*and and make the current item more visible:*/
+          addActive(x);
+        } else if (e.keyCode == 38) { //up
+          /*If the arrow UP key is pressed,
+          decrease the currentFocus variable:*/
+          currentFocus--;
+          /*and and make the current item more visible:*/
+          addActive(x);
+        } else if (e.keyCode == 13) {
+          /*If the ENTER key is pressed, prevent the form from being submitted,*/
+          e.preventDefault();
+          if (currentFocus > -1) {
+            /*and simulate a click on the "active" item:*/
+            if (x) x[currentFocus].click();
+          }
+        }
+      });
+      function addActive(x) {
+        /*a function to classify an item as "active":*/
+        if (!x) return false;
+        /*start by removing the "active" class on all items:*/
+        removeActive(x);
+        if (currentFocus >= x.length) currentFocus = 0;
+        if (currentFocus < 0) currentFocus = (x.length - 1);
+        /*add class "autocomplete-active":*/
+        x[currentFocus].classList.add("autocomplete-active");
+      }
+      function removeActive(x) {
+        /*a function to remove the "active" class from all autocomplete items:*/
+        for (var i = 0; i < x.length; i++) {
+          x[i].classList.remove("autocomplete-active");
+        }
+      }
+      function closeAllLists(elmnt) {
+        /*close all autocomplete lists in the document,
+        except the one passed as an argument:*/
+        var x = document.getElementsByClassName("autocomplete-items");
+        for (var i = 0; i < x.length; i++) {
+          if (elmnt != x[i] && elmnt != inp) {
+            x[i].parentNode.removeChild(x[i]);
+          }
+        }
+      }
+      /*execute a function when someone clicks in the document:*/
+      document.addEventListener("click", function (e) {
+        closeAllLists(e.target);
+      });
+    }
+
+    /*An array containing all the country names in the world:*/
+    var countries = ["Padel Moncloa (225 mtrs)", "Padel Argüelles (525 mtrs)", "Padel Sol (1025 mtrs)", "Padel Lavapies (2025 mtrs)"];
+    /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+    autocomplete(document.getElementById("myInput"), countries);
+
+  </script>
 </body>
 
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
-<p>EIT Digital Master Degree, HCI Project.</p>
+  <p>EIT Digital Master Degree, HCI Project.</p>
 </footer>
 <!-- Footer -->
-   
+
 </html>
