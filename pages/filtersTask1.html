@@ -78,18 +78,18 @@
 
       <!-- Container -->
       <div class="col-md-8" id="main-content-scroll">
-        <div class="container-fluid">
-          <h2> Choose your filters:</h2>
+        <div id="group_title" style="background-color:#4682B4">
+          <h3 style="text-align: center; color:white;">Choose your filters: </h3>
         </div>
 
         <div class="container-fluid">
           <h4>Your level:</h4>
 
           <div class="btn-group btn-group-lg" role="group" aria-label="...">
-            <button type="button" class="btn btn-default">Begginer</button>
-            <button type="button" class="btn btn-default">Amateur</button>
-            <button type="button" class="btn btn-default">Professional</button>
-            <button type="button" class="btn btn-default">Elite</button>
+            <button type="button" class="btn btn-default" id ="begginer">Begginer</button>
+            <button type="button" class="btn btn-default" id="amateur">Amateur</button>
+            <button type="button" class="btn btn-default" id="professional">Professional</button>
+            <button type="button" class="btn btn-default" id="elite">Elite</button>
           </div>
 
 
@@ -130,6 +130,13 @@
   </div>
 </body>
 
+<script>
+  var b1 = document.getElementById("amateur");
+  b1.onclick = function() {
+     b1.style.background = "#00a1d3";
+     b1.style.color="white";
+  }
+</script>
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
   <p>EIT Digital Master Degree, HCI Project.</p>
