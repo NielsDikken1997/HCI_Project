@@ -510,3 +510,8 @@ input#myInput {
   background-color: DodgerBlue !important; 
   color: #ffffff; 
 }
+
+
+a:hover {
+  cursor: pointer; 
+}
