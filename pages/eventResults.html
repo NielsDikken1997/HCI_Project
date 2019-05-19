@@ -1,71 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>HobbyLink</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="../img/Favicon.png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <script src="../js/jquery-3.4.1.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <script src="../js/script.js"></script>
 
   <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 
 <header>
-   <div class="container-fluid">	
-
-      <nav class="navbar fixed-top navbar-light bg-light align-items-center">
-        <div class="row">
-          <div class="col-md-2">
-              <a class="navbar-brand" href="../index.html"> <i class="fas fa-link"></i> HobbyLink</a>
-
-          </div>
-           <div class="col-md-8">
-             <div class="row">
-              <div class="col-md-11">
-                  <div class="form-group">
-                      <input type="search" class="form-control" id="exampleFormControlInput1" placeholder="Global Search">
-                  </div>
-              </div> 
-              <div class="col-md-1 float-right">
-                  <i class="far fa-bell fa-2x light-grey"></i>
-              </div>  
-             </div>
-              
-           </div> 
-            
+  <div class="header">
+    <nav class="navbar fixed-top navbar-light bg-light align-items-center">
+      <div class="row">
+        <div class="col-md-2">
+          <a class="navbar-brand" href="../index.html"> <i class="fas fa-link"></i> HobbyLink</a>
         </div>
-          
-      </nav>
-          
-   </div>
+        <div class="col-md-8">
+          <div class="form-group">
+            <input type="search" class="form-control" id="exampleFormControlInput1" placeholder="Global Search">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="row align-items-center" id="left-navbar">
+            <div class="col-md-8">
+              <h4>Alex Johnson</h4>
+            </div>
+            <div class="col-md-4">
+              <img src="../img/profile.png" alt="myprofile" style="width:35px;height:35px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
 </header>
 
 <body>
-<div class="container-fluid">
-  <div class="row">
-  	<!-- Left Side -->
-    <div class="col-md-2" >
-
-      <div class="row align-items-center" id="left-navbar">
-          <div class="col-md-3">
-              <img src="../img/profile.png" alt="myprofile"style="width:50px;height:50px;">
-          </div>
-          <div class="col-md-9">
-            <h4>Sierra Ferguson</h4>
-            <p>sierraferg@gmail.com</p>
-          </div>
-      </div>
-      
-      
-      <div class="navbar">
-        <ul class="nav nav-list">
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Left Side -->
+      <div class="col-md-2">
+        <div class="navbar">
+          <ul class="nav nav-list">
             <li><a href="../index.html"><i class="fas fa-th-large"></i> Dashboard</a></li>
             <li><a href="../pages/selectCategoryTask1.html"><i class="fas fa-search"></i> Explore Hobbies</a></li>
             <li class="active"><a href="eventResults.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
@@ -74,92 +62,29 @@
             <li class="divider"></li>
             <li><a href="#all"><i class="fas fa-ellipsis-h"></i> Settings</a></li>
           </ul>
-    </div>
-      
-    </div>
-    
-    <!-- Container -->
-    <div class="col-md-8" id="main-content">
+        </div>
 
-          <div class="col-md-12" id="c">
-              <h4> Results obtained: </h4>
-          </div>
+      </div>
 
-          <a data-toggle="modal" data-target="#underConst">
+      <!-- Container -->
+      <div class="col-md-8" id="main-content-scroll">
+
+        <div class="col-md-12" id="c">
+          <h4> Results obtained: </h4>
+        </div>
+
+        <a data-toggle="modal" data-target="#underConst">
           <div class="col-md-4" id="c">
             <div class="panel panel-default">
-              <div class="panel-thumbnail"><img id="imgPadelCards" src="../img/padelMatch1.jpg" alt="Padel Match at Moncloa"> 
+              <div class="panel-thumbnail"><img id="imgPadelCards" src="../img/padelMatch1.jpg"
+                  alt="Padel Match at Moncloa">
               </div>
               <div class="panel-body">
-                   <p class="lead">Padel Match at Moncloa</p>
-                   <p> Free gaps: 2 </p> 
-                   <p> 5.6 kms </p>
-                   <p> 25th March 2019 </p>
-                   <p> 11:00 AM </p>
-              </div>
-            </div>
-          </div>
-        </a>
-
-          <a data-toggle="modal" data-target="#underConst">
-          <div class="col-md-4" id="c">
-            <div class="panel panel-default">
-              <div class="panel-thumbnail"><img id="imgPadelCards" src="../img/padelMatch3.jpg" alt="Padel Match at Moncloa"> 
-              </div>
-              <div class="panel-body">
-                   <p class="lead">The Lions Padel training</p>
-                   <p> Free gaps: 0 </p> 
-                   <p> 0.4 kms </p>
-                   <p> 27th March 2019 </p>
-                   <p> 12:00 AM </p>
-              </div>
-            </div>
-          </div>
-        </a>
-
-          <a data-toggle="modal" data-target="#underConst">
-          <div class="col-md-4" id="c">
-            <div class="panel panel-default">
-              <div class="panel-thumbnail"><img id="imgPadelCards" src="../img/padelMatch2.png" alt="Padel Match at Moncloa"> 
-              </div>
-              <div class="panel-body">
-                   <p class="lead">Hey let's play Padel now!</p>
-                   <p> Free gaps: 0 </p> 
-                   <p> 7.6 kms </p>
-                   <p> 26th March 2019 </p>
-                   <p> 10:00 AM </p>
-              </div>
-            </div>
-          </div>
-        </a>
-
-          <a data-toggle="modal" data-target="#underConst">
-          <div class="col-md-4" id="c">
-            <div class="panel panel-default">
-              <div class="panel-thumbnail"><img id="imgPadelCards" src="../img/padelMatch4.png" alt="Padel Match at Moncloa"> 
-              </div>
-              <div class="panel-body">
-                   <p class="lead">Padel Match at Atocha</p>
-                   <p> Free gaps: 1 </p> 
-                   <p> 1.6 kms </p>
-                   <p> 29th March 2019 </p>
-                   <p> 10:00 AM </p>
-              </div>
-            </div>
-          </div>
-        </a>
-
-          <a href="../pages/Padel match page.html">
-          <div class="col-md-4" id="c">
-            <div class="panel panel-default">
-              <div class="panel-thumbnail"><img id="imgPadelCards" src="../img/padelMatch5.jpg" alt="Padel Match at Moncloa"> 
-              </div>
-              <div class="panel-body">
-                   <p class="lead">Padel Match at Aluche</p>
-                   <p> Free gaps: 3 </p> 
-                   <p> 2.6 kms </p>
-                   <p> 26th March 2019 </p>
-                   <p> 10:00 AM </p>
+                <p class="lead">Padel Match at Moncloa</p>
+                <p> Free gaps: 2 </p>
+                <p> 5.6 kms </p>
+                <p> 25th March 2019 </p>
+                <p> 11:00 AM </p>
               </div>
             </div>
           </div>
@@ -168,90 +93,168 @@
         <a data-toggle="modal" data-target="#underConst">
           <div class="col-md-4" id="c">
             <div class="panel panel-default">
-              <div class="panel-thumbnail"><img id="imgPadelCards" src="../img/padelMatch6.jpg" alt="Padel Match at Moncloa"> 
+              <div class="panel-thumbnail"><img id="imgPadelCards" src="../img/padelMatch3.jpg"
+                  alt="Padel Match at Moncloa">
               </div>
               <div class="panel-body">
-                   <p class="lead">Super Lega Padel Match</p>
-                   <p> Free gaps: 1 </p> 
-                   <p> 1.6 kms </p>
-                   <p> 26th March 2019 </p>
-                   <p> 17:00 AM </p>
+                <p class="lead">The Lions Padel training</p>
+                <p> Free gaps: 0 </p>
+                <p> 0.4 kms </p>
+                <p> 27th March 2019 </p>
+                <p> 12:00 AM </p>
               </div>
             </div>
           </div>
         </a>
 
-          <a data-toggle="modal" data-target="#underConst">
+        <a data-toggle="modal" data-target="#underConst">
           <div class="col-md-4" id="c">
             <div class="panel panel-default">
-              <div class="panel-thumbnail"><img id="imgPadelCards" src="../img/padelMatch7.jpg" alt="Padel Match at Moncloa"> 
+              <div class="panel-thumbnail"><img id="imgPadelCards" src="../img/padelMatch2.png"
+                  alt="Padel Match at Moncloa">
               </div>
               <div class="panel-body">
-                   <p class="lead">Padel Match at Arguelles</p>
-                   <p> Free gaps: 0 </p> 
-                   <p> 3.0 kms </p>
-                   <p> 26th March 2019 </p>
-                   <p> 10:00 AM </p>
+                <p class="lead">Hey let's play Padel now!</p>
+                <p> Free gaps: 0 </p>
+                <p> 7.6 kms </p>
+                <p> 26th March 2019 </p>
+                <p> 10:00 AM </p>
               </div>
             </div>
           </div>
         </a>
 
-          <a data-toggle="modal" data-target="#underConst">
+        <a data-toggle="modal" data-target="#underConst">
           <div class="col-md-4" id="c">
             <div class="panel panel-default">
-              <div class="panel-thumbnail"><img id="imgPadelCards" src="../img/padelMatch8.jpg" alt="Padel Match at Moncloa"> 
+              <div class="panel-thumbnail"><img id="imgPadelCards" src="../img/padelMatch4.png"
+                  alt="Padel Match at Moncloa">
               </div>
               <div class="panel-body">
-                   <p class="lead">Fuenlabrada Padel Match</p>
-                   <p> Free gaps: 3 </p> 
-                   <p> 15.9 kms </p>
-                   <p> 28th March 2019 </p>
-                   <p> 18:00 AM </p>
+                <p class="lead">Padel Match at Atocha</p>
+                <p> Free gaps: 1 </p>
+                <p> 1.6 kms </p>
+                <p> 29th March 2019 </p>
+                <p> 10:00 AM </p>
               </div>
             </div>
           </div>
         </a>
 
-          <!-- Modal -->
-          <div class="modal fade" id="underConst" role="dialog">
-            <div class="modal-dialog">
-              <div class="modal-content-P">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Under Construction</h4>
-                </div>
-                <div class="modal-body-P">
-                      <p>Sorry, this section is not available yet.</p>
-                      <img id="imgModal" src="../img/underConstruction.jpg" alt="ok">
-                </div>
-                <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
+        <a href="../pages/Padel match page.html">
+          <div class="col-md-4" id="c">
+            <div class="panel panel-default">
+              <div class="panel-thumbnail"><img id="imgPadelCards" src="../img/padelMatch5.jpg"
+                  alt="Padel Match at Moncloa">
               </div>
+              <div class="panel-body">
+                <p class="lead">Padel Match at Aluche</p>
+                <p> Free gaps: 3 </p>
+                <p> 2.6 kms </p>
+                <p> 26th March 2019 </p>
+                <p> 10:00 AM </p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a data-toggle="modal" data-target="#underConst">
+          <div class="col-md-4" id="c">
+            <div class="panel panel-default">
+              <div class="panel-thumbnail"><img id="imgPadelCards" src="../img/padelMatch6.jpg"
+                  alt="Padel Match at Moncloa">
+              </div>
+              <div class="panel-body">
+                <p class="lead">Super Lega Padel Match</p>
+                <p> Free gaps: 1 </p>
+                <p> 1.6 kms </p>
+                <p> 26th March 2019 </p>
+                <p> 17:00 AM </p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a data-toggle="modal" data-target="#underConst">
+          <div class="col-md-4" id="c">
+            <div class="panel panel-default">
+              <div class="panel-thumbnail"><img id="imgPadelCards" src="../img/padelMatch7.jpg"
+                  alt="Padel Match at Moncloa">
+              </div>
+              <div class="panel-body">
+                <p class="lead">Padel Match at Arguelles</p>
+                <p> Free gaps: 0 </p>
+                <p> 3.0 kms </p>
+                <p> 26th March 2019 </p>
+                <p> 10:00 AM </p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a data-toggle="modal" data-target="#underConst">
+          <div class="col-md-4" id="c">
+            <div class="panel panel-default">
+              <div class="panel-thumbnail"><img id="imgPadelCards" src="../img/padelMatch8.jpg"
+                  alt="Padel Match at Moncloa">
+              </div>
+              <div class="panel-body">
+                <p class="lead">Fuenlabrada Padel Match</p>
+                <p> Free gaps: 3 </p>
+                <p> 15.9 kms </p>
+                <p> 28th March 2019 </p>
+                <p> 18:00 AM </p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-2">
+        <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-right" id="mySidebar">
+          <h5 class="w3-bar-item"><i class="fa fa-envelope"></i> Messenger</h5>
+          <a href="#" class="w3-bar-item w3-button w3-border-bottom w3-border-top"">Las Jirafas</a>
+                  <a href=" #" class="w3-bar-item w3-button w3-border-bottom"">Mountain bike group</a>
+                  <a href=" #" class="w3-bar-item w3-button w3-border-bottom"">Pablo H.</a>
+                  <a href=" #" class="w3-bar-item w3-button w3-border-bottom"">Las Jirafas</a>
+                  <a href=" #" class="w3-bar-item w3-button w3-border-bottom"">Mountain bike group</a>
+                  <a href=" #" class="w3-bar-item w3-button w3-border-bottom"">Pablo H.</a>
+                  <a href=" #" class="w3-bar-item w3-button w3-border-bottom"">Las Jirafas</a>
+                  <a href=" #" class="w3-bar-item w3-button w3-border-bottom"">Mountain bike group</a>
+                  <a href=" #" class="w3-bar-item w3-button w3-border-bottom"">Pablo H.</a>
+                  <a href=" #" style="position: absolute;bottom: 0;" class="w3-bar-item w3-button w3-border-top"><i
+              class="fa fa-search"></i> Search</a>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="underConst" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content-P">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Under Construction</h4>
+            </div>
+            <div class="modal-body-P">
+              <p>Sorry, this section is not available yet.</p>
+              <img id="imgModal" src="../img/underConstruction.jpg" alt="ok">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
           </div>
         </div>
-      </a>
-
-
-
-
-
-    </div>
-
-    <div class="col-md-2">
-
+      </div>
     </div>
   </div>
-</div>
 </body>
 
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
-<p>EIT Digital Master Degree, HCI Project.</p>
+  <p>EIT Digital Master Degree, HCI Project.</p>
 </footer>
 <!-- Footer -->
 
 <script src="hobby/hobby-controllers.js"></script>
-    
+
 </html>

@@ -1,153 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>HobbyLink</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="../img/Favicon.png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <script src="../js/jquery-3.4.1.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <script src="../js/script.js"></script>
 
   <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 
 <header>
-   <div class="container-fluid">	
-
-      <nav class="navbar navbar-light bg-light align-items-center">
-        <div class="row">
-          <div class="col-md-2">
-              <a class="navbar-brand" href="../index.html"> <i class="fas fa-link"></i> HobbyLink</a>
-
-          </div>
-           <div class="col-md-8">
-             <div class="row">
-              <div class="col-md-11">
-                  <div class="form-group">
-                      <input type="search" class="form-control" id="exampleFormControlInput1" placeholder="Global Search">
-                  </div>
-              </div> 
-              <div class="col-md-1 float-right">
-                  <i class="far fa-bell fa-2x light-grey"></i>
-              </div>  
-             </div>
-              
-           </div> 
-            
+  <div class="header">
+    <nav class="navbar fixed-top navbar-light bg-light align-items-center">
+      <div class="row">
+        <div class="col-md-2">
+          <a class="navbar-brand" href="../index.html"> <i class="fas fa-link"></i> HobbyLink</a>
         </div>
-          
-      </nav>
-          
-   </div>
+        <div class="col-md-8">
+          <div class="form-group">
+            <input type="search" class="form-control" id="exampleFormControlInput1" placeholder="Global Search">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="row align-items-center" id="left-navbar">
+            <div class="col-md-8">
+              <h4>Alex Johnson</h4>
+            </div>
+            <div class="col-md-4">
+              <img src="../img/profile.png" alt="myprofile" style="width:35px;height:35px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
 </header>
 
 <body>
-<div class="container-fluid">
-  <div class="row">
-  	<!-- Left Side -->
-    <div class="col-md-2" >
-
-      <div class="row align-items-center" id="left-navbar">
-          <div class="col-md-3">
-              <img src="../img/profile.png" alt="myprofile"style="width:50px;height:50px;">
-          </div>
-          <div class="col-md-9">
-            <h4>Sierra Ferguson</h4>
-            <p>sierraferg@gmail.com</p>
-          </div>
-      </div>
-      
-      
-    <div class="navbar">
-        <ul class="nav nav-list">
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Left Side -->
+      <div class="col-md-2">
+        <div class="navbar">
+          <ul class="nav nav-list">
             <li><a href="../index.html"><i class="fas fa-th-large"></i> Dashboard</a></li>
             <li class="active"><a href="categorySelTask1.html"><i class="fas fa-search"></i> Explore Hobbies</a></li>
             <li><a href="eventResults.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
-            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"s><i class="fas fa-users"></i> My Groups</a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Padel Moncloa</a></li>
-                  <li><a href="Aluche group page.html">Aluche Group Padel</a></li>
-                  <li><a href="#">Japanese in Madrid</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Create a new group</a></li>
-                </ul>
-              
-              </li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" s><i
+                  class="fas fa-users"></i> My Groups</a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Padel Moncloa</a></li>
+                <li><a href="Aluche group page.html">Aluche Group Padel</a></li>
+                <li><a href="#">Japanese in Madrid</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Create a new group</a></li>
+              </ul>
+
+            </li>
             <li><a href="#all"><i class="far fa-comment-alt border-bottom"></i> Messenger</a></li>
             <li class="divider"></li>
             <li><a href="#all"><i class="fas fa-ellipsis-h"></i> Settings</a></li>
           </ul>
-    </div>
-      
-    </div>
-    
-    <!-- Container -->
-    <div class="col-md-8" id="main-content">
-        <div class="container-fluid">
-            <h2>  Choose your filters:</h2>
         </div>
-        
-       <div class="container-fluid">
-        <h4>Your level:</h4>
-        <br>
-        
-        <div class="btn-group btn-group-lg" role="group" aria-label="...">
+
+      </div>
+
+      <!-- Container -->
+      <div class="col-md-8" id="main-content-scroll">
+        <div class="container-fluid">
+          <h2> Choose your filters:</h2>
+        </div>
+
+        <div class="container-fluid">
+          <h4>Your level:</h4>
+
+          <div class="btn-group btn-group-lg" role="group" aria-label="...">
             <button type="button" class="btn btn-default">Begginer</button>
             <button type="button" class="btn btn-default">Amateur</button>
             <button type="button" class="btn btn-default">Professional</button>
             <button type="button" class="btn btn-default">Elite</button>
+          </div>
+
+
+
+          <h4>Your ideal location:</h4>
+          <div class="container-fluid" id="maps">
+            <img src="../img/map3task1.png" alt="mymap" style="height: 350px;">
+            <h5>Area no more than:
+              <input class="form-control" type="number" value="3" id="number-input"
+                style=" width: 60px; height: 40px; display: inline;">
+
+              km away from your location</h5>
+          </div>
         </div>
 
-        
-        
-        <h4>Your ideal location:</h4>
-        <div class="container-fluid" id="maps">
-                <img src="../img/map3task1.png" alt="mymap" style="height: 400px;">
-                <h5>Area no more than:  
-                        <input class="form-control" type="number" value="3" id="number-input" style=" width: 60px; height: 40px; display: inline;">
-                    
-                      km away from your location</h5>
-        </div>
-              
-        <br>
-
-
-       
-
-        </div>
-       
         <div class="row">
-                <nav aria-label="...">
-                        <ul class="pager">
-                          <li class="previous"><a href="../pages/selectCategoryTask1.html"><span aria-hidden="true">&larr;</span> Back</a></li>
-                          <li class="next"><a href="../pages/groupResults.html">Confirm <span aria-hidden="true">&rarr;</span></a></li>
-                        </ul>
-                      </nav>
-                
+          <nav aria-label="...">
+            <ul class="pager">
+              <!-- <li class="previous"><a href="../pages/selectHobbyTask1.html"><span aria-hidden="true">&larr;</span>
+                    Back</a></li> -->
+              <li class="next"><a style="margin-right:15px" href="../pages/groupResults.html">Confirm <span
+                    aria-hidden="true">&rarr;</span></a>
+              </li>
+            </ul>
+          </nav>
         </div>
+      </div>
 
-        
-</div>
-
-<div class="col-md-2">
-
-</div>
-</div>
-</div>
+      <div class="col-md-2">
+        <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-right" id="mySidebar">
+          <h5 class="w3-bar-item"><i class="fa fa-envelope"></i> Messenger</h5>
+          <a href="#" class="w3-bar-item w3-button w3-border-bottom w3-border-top"">Las Jirafas</a>
+              <a href=" #" class="w3-bar-item w3-button w3-border-bottom"">Mountain bike group</a>
+              <a href=" #" class="w3-bar-item w3-button w3-border-bottom"">Pablo H.</a>
+              <a href=" #" class="w3-bar-item w3-button w3-border-bottom"">Las Jirafas</a>
+              <a href=" #" class="w3-bar-item w3-button w3-border-bottom"">Mountain bike group</a>
+              <a href=" #" class="w3-bar-item w3-button w3-border-bottom"">Pablo H.</a>
+              <a href=" #" class="w3-bar-item w3-button w3-border-bottom"">Las Jirafas</a>
+              <a href=" #" class="w3-bar-item w3-button w3-border-bottom"">Mountain bike group</a>
+              <a href=" #" class="w3-bar-item w3-button w3-border-bottom"">Pablo H.</a>
+              <a href=" #" style="position: absolute;bottom: 0;" class="w3-bar-item w3-button w3-border-top"><i
+              class="fa fa-search"></i> Search</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
-<p>EIT Digital Master Degree, HCI Project.</p>
+  <p>EIT Digital Master Degree, HCI Project.</p>
 </footer>
 <!-- Footer -->
 
 <script src="hobby/hobby-controllers.js"></script>
-    
+
 </html>
