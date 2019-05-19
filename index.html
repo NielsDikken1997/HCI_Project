@@ -18,102 +18,145 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="img/Favicon.png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="css/style.css">
-  
+
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
 
   <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 
 <header>
-  <div class="container-fluid">	
-
-     <nav class="navbar fixed-top navbar-light bg-light align-items-center">
-       <div class="row">
-         <div class="col-md-2">
-             <a class="navbar-brand" href="index.html"> <i class="fas fa-link"></i> HobbyLink</a>
-
-         </div>
-          <div class="col-md-8">
-            <div class="row">
-             <div class="col-md-11">
-                 <div class="form-group">
-                     <input type="search" class="form-control" id="exampleFormControlInput1" placeholder="Global Search">
-                 </div>
-             </div> 
-             <div class="col-md-1 float-right">
-                 <i class="far fa-bell fa-2x light-grey"></i>
-             </div>  
+  <div class="header">
+    <nav class="navbar fixed-top navbar-light bg-light align-items-center">
+      <div class="row">
+        <div class="col-md-2">
+          <a class="navbar-brand" href="index.html"> <i class="fas fa-link"></i> HobbyLink</a>
+        </div>
+        <div class="col-md-8">
+          <div class="form-group">
+            <input type="search" class="form-control" id="exampleFormControlInput1" placeholder="Global Search">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="row align-items-center" id="left-navbar">
+            <div class="col-md-8">
+              <h4>Alex Johnson</h4>
             </div>
-             
-          </div> 
-           
-       </div>
-         
-     </nav>
-         
+            <div class="col-md-4">
+              <img src="img/profile.png" alt="myprofile" style="width:35px;height:35px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
   </div>
 </header>
 
 <body>
-<div class="container-fluid">
- <div class="row">
-   <!-- Left Side -->
-   <div class="col-md-2" >
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Left Side -->
+      <div class="col-md-2">
 
-     <div class="row align-items-center" id="left-navbar">
-         <div class="col-md-3">
-             <img src="img/profile.png" alt="myprofile"style="width:50px;height:50px;">
-         </div>
-         <div class="col-md-9">
-           <h4>Sierra Ferguson</h4>
-           <p>sierraferg@gmail.com</p>
-         </div>
-     </div>
-     
-     
-   <div class="navbar">
-       <ul class="nav nav-list">
-           <li class="active"><a href="index.html"><i class="fas fa-th-large"></i> Dashboard</a></li>
-           <li><a href="pages/selectHobbyTask1.html"><i class="fas fa-search"></i> Explore Hobbies</a></li>
-           <li><a href="pages/eventResults.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
-           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"s><i class="fas fa-users"></i> My Groups</a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="#">Padel Moncloa</a></li>
-              <li><a href="pages/Aluche group page.html">Aluche Group Padel</a></li>
-              <li><a href="#">Japanese in Madrid</a></li>
-              <li class="divider"></li>
-              <li><a href="#">Create a new group</a></li>
-            </ul>
-          
-          </li>
-           <li><a href="#all"><i class="far fa-comment-alt border-bottom"></i> Messenger</a></li>
-           <li class="divider"></li>
-           <li><a href="#all"><i class="fas fa-ellipsis-h"></i> Settings</a></li>
-         </ul>
-   </div>
-     
-   </div>
-   
-   <!-- Container -->
-   <div class="col-md-8" id="main-content">
-          <p>lorem ipsum</p>
-          
-   </div>
-   <div class="col-md-2">
+        <div class="navbar">
+          <ul class="nav nav-list">
+            <li class="active"><a href="index.html"><i class="fas fa-th-large"></i> Dashboard</a></li>
+            <li><a href="pages/selectHobbyTask1.html"><i class="fas fa-search"></i> Explore Hobbies</a></li>
+            <li><a href="pages/eventResults.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" s><i
+                  class="fas fa-users"></i> My Groups</a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Padel Moncloa</a></li>
+                <li><a href="pages/Aluche group page.html">Aluche Group Padel</a></li>
+                <li><a href="#">Japanese in Madrid</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Create a new group</a></li>
+              </ul>
+            </li>
+            <li><a href="#all"><i class="far fa-comment-alt border-bottom"></i> Messenger</a></li>
+            <li class="divider"></li>
+            <li><a href="#all"><i class="fas fa-ellipsis-h"></i> Settings</a></li>
+          </ul>
+        </div>
 
-   </div>
- </div>
-</div>
+      </div>
+
+      <!-- Container -->
+      <div class="col-md-8" id="main-content-scroll">
+
+        <!-- Page Heading -->
+        <div id="group_title" style="background-color:#4682B4">
+          <h3 style="text-align: center; color:white;">Home Page</h3>
+        </div>
+
+        <!-- Youtube video 1 -->
+        <div class="col-md-12" id="c">
+          <div class="panel panel-default">
+            <br>
+            <div class="card-body">
+              <iframe width="820" height="375" src="https://www.youtube.com/embed/aZoK0J3yop0" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <h5><strong>Yesterdays training with the boys, we won 3-0.</strong></h5>
+          </div>
+        </div>
+
+        <!-- Event -->
+        <div class="col-md-12" id="c">
+          <div class="panel panel-default">
+            <div class="panel-thumbnail"><img id="imgPadelCards" src="img/padelGroup5.png" alt="Carabanchel Padel">
+            </div>
+
+            <div class="panel-body">
+              <p class="lead">Padel match</p>
+              <p> 26/03/2019</p>
+              <div class="event">
+                Come and join us to play some padel. We need 5 more players.
+                <br>
+                <br>
+                <button type="button" class="btn btn-primary" disabled>More info</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <!-- Youtube video 2 -->
+        <div class="col-md-12" id="c">
+          <div class="panel panel-default">
+            <br>
+            <div class="card-body">
+              <iframe width="820" height="375" src="https://www.youtube.com/embed/XSOx4wMnNbA" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <h5><strong>Yesterdays match, after and exiting match we won!!</strong></h5>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-2">
+        <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-right" id="mySidebar">
+          <h5 class="w3-bar-item w3-border-bottom "><i class="fa fa-envelope"></i> Messenger</h5>
+          <p style="text-align: center;"><small>You have no conversations yet.</small></p>
+          <a href=" #" style="position: absolute;bottom: 0;" class="w3-bar-item w3-button w3-border-top"><i
+              class="fa fa-search"></i> Search</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
-<p>EIT Digital Master Degree, HCI Project.</p>
+  <p>EIT Digital Master Degree, HCI Project.</p>
 </footer>
 <!-- Footer -->
 

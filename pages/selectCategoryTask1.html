@@ -1,305 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>HobbyLink</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="../img/Favicon.png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <script src="../js/jquery-3.4.1.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <script src="../js/script.js"></script>
 
   <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 
 <header>
-   <div class="container-fluid">	
-
-      <nav class="navbar navbar-light bg-light align-items-center">
-        <div class="row">
-          <div class="col-md-2">
-              <a class="navbar-brand" href="../index.html"> <i class="fas fa-link"></i> HobbyLink</a>
-
-          </div>
-           <div class="col-md-8">
-             <div class="row">
-              <div class="col-md-11">
-                  <div class="form-group">
-                      <input type="search" class="form-control" id="exampleFormControlInput1" placeholder="Global Search">
-                  </div>
-              </div> 
-              <div class="col-md-1 float-right">
-                  <i class="far fa-bell fa-2x light-grey"></i>
-              </div>  
-             </div>
-              
-           </div> 
-            
+  <div class="header">
+    <nav class="navbar fixed-top navbar-light bg-light align-items-center">
+      <div class="row">
+        <div class="col-md-2">
+          <a class="navbar-brand" href="../index.html"> <i class="fas fa-link"></i> HobbyLink</a>
         </div>
-          
-      </nav>
-          
-   </div>
+        <div class="col-md-8">
+          <div class="form-group">
+            <input type="search" class="form-control" id="exampleFormControlInput1" placeholder="Global Search">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="row align-items-center" id="left-navbar">
+            <div class="col-md-8">
+              <h4>Alex Johnson</h4>
+            </div>
+            <div class="col-md-4">
+              <img src="../img/profile.png" alt="myprofile" style="width:35px;height:35px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
 </header>
 
 <body>
-<div class="container-fluid">
-  <div class="row">
-  	<!-- Left Side -->
-    <div class="col-md-2" >
-
-      <div class="row align-items-center" id="left-navbar">
-          <div class="col-md-3">
-              <img src="../img/profile.png" alt="myprofile"style="width:50px;height:50px;">
-          </div>
-          <div class="col-md-9">
-            <h4>Sierra Ferguson</h4>
-            <p>sierraferg@gmail.com</p>
-          </div>
-      </div>
-      
-      
-    <div class="navbar">
-        <ul class="nav nav-list">
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Left Side -->
+      <div class="col-md-2">
+        <div class="navbar">
+          <ul class="nav nav-list">
             <li><a href="../index.html"><i class="fas fa-th-large"></i> Dashboard</a></li>
-            <li class="active"><a href="categorySelTask1.html"><i class="fas fa-search"></i> Explore Hobbies</a></li>
-            <li><a href="eventResults.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
-            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"s><i class="fas fa-users"></i> My Groups</a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Padel Moncloa</a></li>
-                  <li><a href="Aluche group page.html">Aluche Group Padel</a></li>
-                  <li><a href="#">Japanese in Madrid</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Create a new group</a></li>
-                </ul>
-              
-              </li>
+            <li class="active"><a href="../pages/selectHobbyTask1.html"><i class="fas fa-search"></i> Explore
+                Hobbies</a></li>
+            <li><a href="../pages/eventResults.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" s><i
+                  class="fas fa-users"></i> My Groups</a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Padel Moncloa</a></li>
+                <li><a href="Aluche group page.html">Aluche Group Padel</a></li>
+                <li><a href="#">Japanese in Madrid</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Create a new group</a></li>
+              </ul>
+
+            </li>
             <li><a href="#all"><i class="far fa-comment-alt border-bottom"></i> Messenger</a></li>
             <li class="divider"></li>
             <li><a href="#all"><i class="fas fa-ellipsis-h"></i> Settings</a></li>
           </ul>
-    </div>
-      
-    </div>
-    
-    <!-- Container -->
-    <div class="col-md-8" id="main-content">
+        </div>
+
+      </div>
+
+      <!-- Container -->
+      <div class="col-md-8" id="main-content-scroll">
         <div class="container-fluid">
-            <h2>  Choose your category:</h2>
-            <br>
+          <h2> Choose your category:</h2>
+          <br>
         </div>
-        
-       <div class="row">
-        <div class="col-md-4">
-            <div class="panel panel-default">
-              <div class="panel-body">
-                   <h3>Racket Sports</h3>
-                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                        <label class="form-check-label" for="defaultCheck1">Tennis <span class="badge">14</span>
-                        </label>
-                    <br>
-                       
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                        <label class="form-check-label" for="defaultCheck1">Padel <span class="badge">11</span>
-                        </label>
-                    <br>
-                    
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                       <label class="form-check-label" for="defaultCheck1">Badminton <span class="badge">3</span>
-                        </label>
-                    <br>
-                       
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                       <label class="form-check-label" for="defaultCheck1">Table Tennis <span class="badge">4</span>
-                        </label>
-                    <br>
-                       
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                       <label class="form-check-label" for="defaultCheck1">Lacrosse <span class="badge">7</span>
-                        </label>
-                    <br>
-                       
-                  </div>
-                </div>
-            </div>
 
-            <div class="panel panel-default">
-                    <div class="panel-body">
-                         <h3>Artistic</h3>
-                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">Artistic Gimnastics <span class="badge">8</span>
-                              </label>
-                          <br>
-                             
-                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">Ballet <span class="badge">10</span>
-                              </label>
-                          <br>
-                          
-                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                             <label class="form-check-label" for="defaultCheck1">Zumba <span class="badge">5</span>
-                              </label>
-                          <br>
-                             
-                        </div>
-                      </div>
-                  </div>
-            
-          </div> 
-        
-        
-        <div class="col-md-4">
-            <div class="panel panel-default">
-              <div class="panel-body">
-                   <h3>Ball Sports</h3>
-                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                        <label class="form-check-label" for="defaultCheck1">Soccer <span class="badge">35</span>
-                        </label>
-                    <br>
-                       
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                        <label class="form-check-label" for="defaultCheck1">Basketball <span class="badge">16</span>
-                        </label>
-                    <br>
-                    
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                       <label class="form-check-label" for="defaultCheck1">Volleyball <span class="badge">7</span>
-                        </label>
-                    <br>
-                       
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                       <label class="form-check-label" for="defaultCheck1">Rugby <span class="badge">4</span>
-                        </label>
-                    <br>
-                       
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                       <label class="form-check-label" for="defaultCheck1">Waterpolo <span class="badge">7</span>
-                        </label>
-                    <br>
-                       
-                       
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                       <label class="form-check-label" for="defaultCheck1">Handball <span class="badge">6</span>
-                        </label>
-                    <br>
-                       
-                  </div>
-                </div>
-            </div>
-
-            <div class="panel panel-default">
-                    <div class="panel-body">
-                         <h3>Martial Arts</h3>
-                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">Judo <span class="badge">9</span>
-                              </label>
-                          <br>
-                             
-                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">Karate <span class="badge">3</span>
-                              </label>
-                          <br>
-                          
-                             
-                        </div>
-                      </div>
-                  </div>
-          </div> 
-        
-        
-           
-        <div class="col-md-4">
-            <div class="panel panel-default">
-              <div class="panel-body">
-                   <h3>Athletics</h3>
-                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                        <label class="form-check-label" for="defaultCheck1">Running <span class="badge">25</span>
-                        </label>
-                    <br>
-                       
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                        <label class="form-check-label" for="defaultCheck1">Hiking <span class="badge">16</span>
-                        </label>
-                    <br>
-                    
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                       <label class="form-check-label" for="defaultCheck1">Yogging <span class="badge">2</span>
-                        </label>
-                    <br>
-                       
-                  </div>
-                </div>
-            </div>
-
-
-            <div class="panel panel-default">
-                    <div class="panel-body">
-                         <h3>Others</h3>
-                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">Swimming <span class="badge">13</span>
-                              </label>
-                          <br>
-                             
-                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">Fencing <span class="badge">11</span>
-                              </label>
-                          <br>
-                          
-                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                             <label class="form-check-label" for="defaultCheck1">Baseball <span class="badge">7</span>
-                              </label>
-                          <br>
-                             
-                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                             <label class="form-check-label" for="defaultCheck1">Gimnastics <span class="badge">4</span>
-                              </label>
-                          <br>
-                             
-                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                             <label class="form-check-label" for="defaultCheck1">Yoga <span class="badge">3</span>
-                              </label>
-                        </div>
-                      </div>
-                  </div>
-            </div> 
-        </div>
-       
         <div class="row">
-                <nav aria-label="...">
-                        <ul class="pager">
-                          <li class="previous"><a href="../pages/selectHobbyTask1.html"><span aria-hidden="true">&larr;</span> Back</a></li>
-                          <li class="next"><a href="../pages/filtersTask1.html">Confirm <span aria-hidden="true">&rarr;</span></a></li>
-                        </ul>
-                      </nav>
-                
+          <div class="col-md-4">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <h3>Racket Sports</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Tennis <span class="badge">14</span>
+                  </label>
+                  <br>
+
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Padel <span class="badge">11</span>
+                  </label>
+                  <br>
+
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Badminton <span class="badge">3</span>
+                  </label>
+                  <br>
+
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Table Tennis <span class="badge">4</span>
+                  </label>
+                  <br>
+
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Lacrosse <span class="badge">7</span>
+                  </label>
+                  <br>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <h3>Artistic</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Artistic Gimnastics <span class="badge">8</span>
+                  </label>
+                  <br>
+
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Ballet <span class="badge">10</span>
+                  </label>
+                  <br>
+
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Zumba <span class="badge">5</span>
+                  </label>
+                  <br>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col-md-4">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <h3>Ball Sports</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Soccer <span class="badge">35</span>
+                  </label>
+                  <br>
+
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Basketball <span class="badge">16</span>
+                  </label>
+                  <br>
+
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Volleyball <span class="badge">7</span>
+                  </label>
+                  <br>
+
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Rugby <span class="badge">4</span>
+                  </label>
+                  <br>
+
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Waterpolo <span class="badge">7</span>
+                  </label>
+                  <br>
+
+
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Handball <span class="badge">6</span>
+                  </label>
+                  <br>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <h3>Martial Arts</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Judo <span class="badge">9</span>
+                  </label>
+                  <br>
+
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Karate <span class="badge">3</span>
+                  </label>
+                  <br>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-md-4">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <h3>Athletics</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Running <span class="badge">25</span>
+                  </label>
+                  <br>
+
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Hiking <span class="badge">16</span>
+                  </label>
+                  <br>
+
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Yogging <span class="badge">2</span>
+                  </label>
+                  <br>
+
+                </div>
+              </div>
+            </div>
+
+
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <h3>Others</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Swimming <span class="badge">13</span>
+                  </label>
+                  <br>
+
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Fencing <span class="badge">11</span>
+                  </label>
+                  <br>
+
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Baseball <span class="badge">7</span>
+                  </label>
+                  <br>
+
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Gimnastics <span class="badge">4</span>
+                  </label>
+                  <br>
+
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Yoga <span class="badge">3</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-    </div>
+        <div class="row">
+          <nav aria-label="...">
+            <ul class="pager">
+              <!-- <li class="previous"><a href="../pages/selectHobbyTask1.html"><span aria-hidden="true">&larr;</span>
+                  Back</a></li> -->
+              <li class="next"><a style="margin-right:15px" href="../pages/filtersTask1.html">Confirm <span
+                    aria-hidden="true">&rarr;</span></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
 
-    <div class="col-md-2">
-
+      <div class="col-md-2">
+        <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-right" id="mySidebar">
+          <h5 class="w3-bar-item w3-border-bottom "><i class="fa fa-envelope"></i> Messenger</h5>
+          <p style="text-align: center;"><small>You have no conversations yet.</small></p>
+          <a href=" #" style="position: absolute;bottom: 0;" class="w3-bar-item w3-button w3-border-top"><i
+              class="fa fa-search"></i> Search</a>
+        </div>
+      </div>
     </div>
   </div>
-</div>
 </body>
 
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
-<p>EIT Digital Master Degree, HCI Project.</p>
+  <p>EIT Digital Master Degree, HCI Project.</p>
 </footer>
 <!-- Footer -->
 
 <script src="hobby/hobby-controllers.js"></script>
-    
+
 </html>
