@@ -55,7 +55,7 @@
         <div class="navbar">
           <ul class="nav nav-list">
             <li><a href="../index.html"><i class="fas fa-th-large"></i> Dashboard</a></li>
-            <li class="active"><a href="../pages/selectHobbyTask1.html"><i class="fas fa-search"></i> Explore Hobbies</a></li>
+            <li class="active"><a href="../pages/selectHobbyTask1.html"><i class="fas fa-search"></i> Explore Groups</a></li>
             <li><a href="../pages/eventResults.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" s><i
                   class="fas fa-users"></i> My Groups</a>
@@ -96,7 +96,7 @@
 
           <h4>Your ideal location:</h4>
           <div class="container-fluid" id="maps">
-            <img src="../img/map3task1.png" alt="mymap" style="height: 350px;">
+            <img src="../img/map3task1.png" alt="mymap" style="height: 350px;" id="themap">
             <h5>Area no more than:
               <input class="form-control" type="number" value="3" id="number-input"
                 style=" width: 60px; height: 40px; display: inline;">
@@ -135,6 +135,11 @@
   b1.onclick = function() {
      b1.style.background = "#00a1d3";
      b1.style.color="white";
+  }
+
+  var numinput= document.getElementById("number-input");
+  numinput.onclick = function(){
+    document.getElementById("themap").src = "../img/map5task1.png";
   }
 </script>
 <!-- Footer -->
