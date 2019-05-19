@@ -45,12 +45,6 @@ jQuery(document).ready(function () {
             }
         });
     });
-
-    // jQuery('.btn[href^=#]').click(function (e) {
-    //     e.preventDefault();
-    //     var href = jQuery(this).attr('href');
-    //     jQuery(href).modal('toggle');
-    // });
 });
 
 window.onload = function () {
@@ -84,12 +78,4 @@ function myFunction() {
     } else {
         text.style.display = "none";
     }
-}
-
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-}
-
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
 }
