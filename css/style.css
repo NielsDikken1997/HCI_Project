@@ -9,11 +9,6 @@ body {
   line-height: 1.5;
 }
 
-.container-fluid {
-  /* padding-top: 15px; */
-  /* padding-bottom: 15px; */
-}
-
 .navbar-brand {
   float: left;
   height: 50px;
@@ -514,4 +509,21 @@ input#myInput {
 
 a:hover {
   cursor: pointer; 
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:60px;
+	left:20px;
+	background-color:#00a1d3;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+	margin-top:22px;
 }

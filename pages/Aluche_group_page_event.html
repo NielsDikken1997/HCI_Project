@@ -71,29 +71,34 @@
             <div class="col-md-2">
                 <div class="navbar">
                     <ul class="nav nav-list">
-                        <li><a href="../index.html"><i class="fa fa-arrow-left"></i> Exit the group</a></li>
-                        <li><a href="#all"><i class="fas fa-users"></i> List of Members</a></li>
+                        <li><a href="../index.html"><i class="fas fa-th-large"></i> Dashboard</a></li>
+                        <li><a href="../pages/selectHobbyTask1.html"><i class="fas fa-search"></i> Explore Groups</a>
+                        </li>
                         <li><a href="../pages/eventResults.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
-                        <li><a data-target="#myModal" data-toggle="modal" href="#myModal"><i
-                                    class="fas fa-calendar-plus"></i>
-                                Create
-                                Event</a></li>
-                        <li><a href="#all"><i class="fas fa-newspaper"></i> Media</a></li>
-                        <li class="divider"></li>
                         <li class="active" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"
                                 s><i class="fas fa-users"></i> My Groups</a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="#">Padel Moncloa</a></li>
-                                <li><a href="../pages/Aluche_group_page_event.html">Aluche Group Padel</a></li>
+                                <li><a href="../pages/Aluche group page.html">Aluche Group Padel</a></li>
                                 <li><a href="#">Japanese in Madrid</a></li>
                                 <li class="divider"></li>
                                 <li><a href="#">Create a new group</a></li>
                             </ul>
                         </li>
+                        <li><a href="#all"><i class="far fa-comment-alt border-bottom"></i> Messenger</a></li>
+                        <li class="divider"></li>
                         <li><a href="#all"><i class="fas fa-ellipsis-h"></i> Settings</a></li>
+                        <br>
+                        <br>
+                        <li><i class="fas fa-table-tennis"></i> Aluche Group Padel</li>
+                        <li><a href="#all"><i class="fas fa-users"></i> List of Members</a></li>
+                        <li><a data-target="#myModal" data-toggle="modal" href="#myModal"><i
+                                    class="fas fa-calendar-plus"></i>
+                                Create
+                                Event</a></li>
+                        <li><a href="#all"><i class="fas fa-camera"></i> Media</a></li>
                     </ul>
                 </div>
-
             </div>
 
             <!-- Container -->
@@ -210,11 +215,21 @@
                                         <label id="labelModal">Location</label>
                                     </div>
                                     <div class="col-75">
-                                        <div autocomplete="off">
-                                            <div class="autocomplete" style="width:300px;">
-                                                <input id="myInput" type="text" name="myCountry" placeholder="Search">
-                                            </div>
-                                        </div>
+                                        <input type="text" id="default" list="SportCenters" placeholder="Search">
+                                        <datalist id="SportCenters">
+                                            <option value="Basketball Court Aluche">(200 mtrs)</option>
+                                            <option value="Beach Volleyball court">(250 mtrs)</option>
+                                            <option value="Padel Court Aluche">(300 mtrs)</option>
+                                            <option value="Sport Center Embajadores">(800 mtrs)</option>
+                                            <option value="Rugby Court UCM">(1230 mtrs)</option>
+                                            <option value="Padel Lavapies">(1525 mtrs)</option>
+                                            <option value="Volleyball Courts Lavapies">(1760 mtrs)</option>
+                                            <option value="Baseball court UPM">(1890 mtrs)</option>
+                                            <option value="Padel Sol">(2025 mtrs)</option>
+                                            <option value="Tennis Courts Parque del Jésus">(2598 mtrs)</option>
+                                            <option value="Basketball Atocha">(3098 mtrs)</option>
+                                            <option value="Padel El Retiro">(3525 mtrs)</option>
+                                        </datalist>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -321,111 +336,6 @@
         </div>
     </div>
     </div>
-
-    <script>
-        function autocomplete(inp, arr) {
-            /*the autocomplete function takes two arguments,
-            the text field element and an array of possible autocompleted values:*/
-            var currentFocus;
-            /*execute a function when someone writes in the text field:*/
-            inp.addEventListener("input", function (e) {
-                var a, b, i, val = this.value;
-                /*close any already open lists of autocompleted values*/
-                closeAllLists();
-                if (!val) { return false; }
-                currentFocus = -1;
-                /*create a DIV element that will contain the items (values):*/
-                a = document.createElement("DIV");
-                a.setAttribute("id", this.id + "autocomplete-list");
-                a.setAttribute("class", "autocomplete-items");
-                /*append the DIV element as a child of the autocomplete container:*/
-                this.parentNode.appendChild(a);
-                /*for each item in the array...*/
-                for (i = 0; i < arr.length; i++) {
-                    /*check if the item starts with the same letters as the text field value:*/
-                    if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
-                        /*create a DIV element for each matching element:*/
-                        b = document.createElement("DIV");
-                        /*make the matching letters bold:*/
-                        b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
-                        b.innerHTML += arr[i].substr(val.length);
-                        /*insert a input field that will hold the current array item's value:*/
-                        b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
-                        /*execute a function when someone clicks on the item value (DIV element):*/
-                        b.addEventListener("click", function (e) {
-                            /*insert the value for the autocomplete text field:*/
-                            inp.value = this.getElementsByTagName("input")[0].value;
-                            /*close the list of autocompleted values,
-                            (or any other open lists of autocompleted values:*/
-                            closeAllLists();
-                        });
-                        a.appendChild(b);
-                    }
-                }
-            });
-            /*execute a function presses a key on the keyboard:*/
-            inp.addEventListener("keydown", function (e) {
-                var x = document.getElementById(this.id + "autocomplete-list");
-                if (x) x = x.getElementsByTagName("div");
-                if (e.keyCode == 40) {
-                    /*If the arrow DOWN key is pressed,
-                    increase the currentFocus variable:*/
-                    currentFocus++;
-                    /*and and make the current item more visible:*/
-                    addActive(x);
-                } else if (e.keyCode == 38) { //up
-                    /*If the arrow UP key is pressed,
-                    decrease the currentFocus variable:*/
-                    currentFocus--;
-                    /*and and make the current item more visible:*/
-                    addActive(x);
-                } else if (e.keyCode == 13) {
-                    /*If the ENTER key is pressed, prevent the form from being submitted,*/
-                    e.preventDefault();
-                    if (currentFocus > -1) {
-                        /*and simulate a click on the "active" item:*/
-                        if (x) x[currentFocus].click();
-                    }
-                }
-            });
-            function addActive(x) {
-                /*a function to classify an item as "active":*/
-                if (!x) return false;
-                /*start by removing the "active" class on all items:*/
-                removeActive(x);
-                if (currentFocus >= x.length) currentFocus = 0;
-                if (currentFocus < 0) currentFocus = (x.length - 1);
-                /*add class "autocomplete-active":*/
-                x[currentFocus].classList.add("autocomplete-active");
-            }
-            function removeActive(x) {
-                /*a function to remove the "active" class from all autocomplete items:*/
-                for (var i = 0; i < x.length; i++) {
-                    x[i].classList.remove("autocomplete-active");
-                }
-            }
-            function closeAllLists(elmnt) {
-                /*close all autocomplete lists in the document,
-                except the one passed as an argument:*/
-                var x = document.getElementsByClassName("autocomplete-items");
-                for (var i = 0; i < x.length; i++) {
-                    if (elmnt != x[i] && elmnt != inp) {
-                        x[i].parentNode.removeChild(x[i]);
-                    }
-                }
-            }
-            /*execute a function when someone clicks in the document:*/
-            document.addEventListener("click", function (e) {
-                closeAllLists(e.target);
-            });
-        }
-
-        /*An array containing all the country names in the world:*/
-        var countries = ["Padel Moncloa (225 mtrs)", "Padel Argüelles (525 mtrs)", "Padel Sol (1025 mtrs)", "Padel Lavapies (2025 mtrs)"];
-        /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
-        autocomplete(document.getElementById("myInput"), countries);
-
-    </script>
 </body>
 
 <!-- Footer -->
